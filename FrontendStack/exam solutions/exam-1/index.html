@@ -1,0 +1,55 @@
+<html>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous"
+  />
+  <head>
+    <!--  TODO: Great job!-->
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body onload="drawTillFull();">
+    <div id="status-indicator" class="invisible"></div>
+    <div id="volume-compute-form" onsubmit="console.log('ass');">
+      <fieldset>
+        <label for="radius"
+          >Enter the radius that the volume will be computed by:</label
+        >
+        <input
+          placeholder="Enter radius"
+          type="number"
+          id="radius"
+          name="radius"
+          min="0"
+          max="1000"
+          required
+          class="validate"
+        />
+        <span class="validity"></span>
+      </fieldset>
+
+      <button id="volume-compute" onclick="processInput();">Compute</button>
+    </div>
+
+    <div id="output-display"><span id="volume"></span></div>
+
+    <div id="canvas-container">
+      <button id="clear-canvas" onclick="clearCanvas();">Clear</button>
+      <canvas id="shapes" width="700px" height="500px"
+        >Canvas not supported!!!</canvas
+      >
+    </div>
+
+    <script type="text/javascript">
+      // init global vars
+      var volumeOutput = document.querySelector("#output-display > #volume");
+      var mainCanvas = document.querySelector("#canvas-container > canvas");
+      var mainContext = mainCanvas.getContext("2d");
+      var statusIndicator = document.querySelector("#status-indicator");
+      var radiusInput = document.querySelector("#radius");
+    </script>
+  </body>
+</html>

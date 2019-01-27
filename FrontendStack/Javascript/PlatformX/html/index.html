@@ -1,0 +1,28 @@
+<!--
+Remember! 
+frameset and frame are deprecated!
+<frame> is an HTML element which defines a particular area in which another HTML document can be displayed. 
+A frame should be used (ONLY) within a <frameset>.
+
+-->
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>MyPlatform</title>
+	</head>
+	
+	<!-- 
+	Notice the attributes - 
+		cols - This attribute specifies the number and size of **horizontal** spaces in a frameset.
+		rows - This attribute specifies the number and size of **vertical** spaces in a frameset.
+	-->
+	<frameset id="main-frames" cols="20%,*" class="foo bar fuzz"> 
+		<frame id="tool-bar" src="toolbar.html" />
+		<!-- Nested frameset! -->
+		<frameset id="nested-frames" rows="*,5%"> 
+			<frame id="main-content" src="content-pages/feed.html" />
+			<frame id="footer" src="footer.html" />
+		</frameset> 
+	</frameset>
+</html>

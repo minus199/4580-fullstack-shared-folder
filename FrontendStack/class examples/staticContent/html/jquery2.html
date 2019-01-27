@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jQuery - Default functionality</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <link href="../jquery-ui.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="ourAccordion">
+      <h3>Section 1</h3>
+      <div>
+        <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
+          Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+          condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi.
+          Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu
+          ante scelerisque vulputate.
+        </p>
+      </div>
+      <h3>Section 2</h3>
+      <div>
+        <p>
+          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis
+          porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non
+          quam. In suscipit faucibus urna.
+        </p>
+      </div>
+      <h3>Section 3</h3>
+      <div>
+        <p>
+          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque
+          lobortis. Phasellus pellentesque purus in massa. Aenean in pede.
+          Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed
+          commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis
+          leo purus venenatis dui.
+        </p>
+        <ul>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+        </ul>
+      </div>
+      <h3>Section 4</h3>
+      <div>
+        <p>
+          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+          mauris vel est.
+        </p>
+        <p>
+          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat
+          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
+          nostra, per inceptos himenaeos.
+        </p>
+      </div>
+      <h3>Section 4</h3>
+      <div>
+        <p>
+          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+          mauris vel est.
+        </p>
+        <p>
+          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat
+          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
+          nostra, per inceptos himenaeos.
+        </p>
+      </div>
+      <h3>Section 4</h3>
+      <div>
+        <p>
+          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+          mauris vel est.
+        </p>
+        <p>
+          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat
+          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
+          nostra, per inceptos himenaeos.
+        </p>
+      </div>
+      <h3>Section 4</h3>
+      <div>
+        <p>
+          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+          mauris vel est.
+        </p>
+        <p>
+          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat
+          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
+          nostra, per inceptos himenaeos.
+        </p>
+      </div>
+      <h3>Section 4</h3>
+      <div>
+        <p>
+          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+          mauris vel est.
+        </p>
+        <p>
+          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat
+          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
+          nostra, per inceptos himenaeos.
+        </p>
+      </div>
+    </div>
+
+    <div class="items-container">
+      <input type="button" value="Inject HTML" id="trigger-html-injection" />
+      <input type="button" value="triggerjson" id="trigger-json" />
+      <input type="button" value="Fetch JS" id="trigger-fetch-js" />
+      <div id="items-container"></div>
+      <div class="log"></div>
+    </div>
+    <script>
+      // All ajax req handler complete
+      $(document).ajaxComplete(function() {
+        $(".log").text("Triggered ajaxComplete handler.");
+      });
+
+      $("#trigger-json").click(function() {
+        var jqxhr = $.getJSON("posts", function() {
+          console.log("success", arguments);
+        })
+          .done(function() {
+            console.log("second success", arguments);
+          })
+          .fail(function() {
+            console.log("error", arguments);
+          })
+          .always(function() {
+            console.log("complete",  );
+          });
+
+        // Perform other work here ...
+
+        // Set another completion function for the request above
+        jqxhr.complete(function() {
+          console.log("second complete");
+        });
+      });
+
+      $("#trigger-html-injection").click(function() {
+        console.log("OnTrigger - arguments", arguments);
+        $("#items-container").load("jquery-html-inject-test-page.html");
+      });
+
+      $("#trigger-fetch-js").click(function() {
+        $.getScript("../js/script-inject.js")
+          .done(function(script, textStatus) {
+            console.log(textStatus, script);
+          })
+          .fail(function(jqxhr, settings, exception) {
+            $("div.log").text("Triggered ajaxError handler.");
+          });
+      });
+
+      function encodeDecodeHTML() {
+        //https://api.jquery.com/serialize/
+        var myObject = {
+          a: {
+            one: 1,
+            two: 2,
+            three: 3
+          },
+          b: [1, 2, 3]
+        };
+        var recursiveEncoded = $.param(myObject);
+        var recursiveDecoded = decodeURIComponent($.param(myObject));
+        alert(encodeURIComponent(recursiveDecoded));
+        alert(recursiveEncoded);
+        alert(recursiveDecoded);
+      }
+    </script>
+  </body>
+</html>
+<!-- http://learn.jquery.com/jquery-ui/theming/ -->

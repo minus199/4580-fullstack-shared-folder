@@ -1,0 +1,19 @@
+var keys = ['milk', 'eggs', 'bread', 'cheese'];
+
+function populate(k){
+	var output = {};
+	for (var i=0; i < k.length; i++){
+		output[k[i]] = {index: i};
+    }
+	return output;
+}
+
+function extractRef(keyName, data){
+	return data[keyName];
+}
+
+function validateSameRef(data, ref1, ref2){
+	return ref1 === ref2;
+}
+
+var data = populate(keys);

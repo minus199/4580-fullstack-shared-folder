@@ -1,0 +1,10 @@
+#div1{
+    border:1px solid black;
+    margin:5px;
+    font-style:bold;
+}
+
+#div2{
+    border:1px solid black;
+    margin:5px;
+}

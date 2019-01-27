@@ -1,0 +1,76 @@
+
+
+<html>
+	<head>
+		<title>ToolBar</title>
+		<style>
+			ol {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  width: 200px;
+			  background-color: #f1f1f1;
+			}
+
+			li {
+			  display: block;
+			  color: #000;
+			  padding: 8px 16px;
+			  text-decoration: none;
+			}
+
+			li:hover {
+			  background-color: #555;
+			  color: white;
+			}
+			
+			li:active{
+				color:red;
+			}
+			
+			li:last-child {
+			  border-bottom: 1px solid black;
+			}
+
+			.active-page{
+				background-color: green;
+			}
+		</style>
+	
+		<script type="text/javascript">
+			function loadNav(){
+					var contentFrame = window.parent.document.querySelector("#main-content");
+					var nav = document.querySelector("nav");
+					var navLinks = nav.querySelectorAll("li");
+					var selected = nav.querySelector(".active-page")
+					
+					function toggleActive(newEl){
+						newEl.classList.add("active-page")
+						selected.classList.remove("active-page")
+						selected = newEl
+					}
+					
+					for (var navI = 0; navI < navLinks.length; navI++){
+						navLinks[navI].onclick = function(e){
+							var navItem = e.srcElement;
+							toggleActive(navItem);
+							contentFrame.src = "content-pages/" + e.srcElement.id.split("-").pop() + ".html";
+							
+							console.debug("Clicked on " + navItem.id, e);
+						};
+					}
+			}
+		</script>
+	</head>
+
+	<body onload="loadNav();">
+		<h1 class="main-title">Where do you want to go?</h1>
+		<nav id="main-nav" class="crumbs">
+			<ol>
+				<li id="go-to-feed" class="active-page" class="crumb">Feed</a></li>
+				<li id="go-to-profile" class="crumb">Profile</li>
+				<li id="go-to-about_us" class="crumb">About</li>
+			</ol>
+		</nav>
+	</body>
+</html>

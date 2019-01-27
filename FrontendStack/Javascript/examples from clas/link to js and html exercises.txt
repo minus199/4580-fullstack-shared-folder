@@ -1,0 +1,18 @@
+
+HTML and Javascript
+https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php
+
+Bootstrap
+https://www.w3schools.com/bootstrap/exercise_bs3.asp?filename=exercise_bs3_tables1
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties
+var bike = {
+  name: "SuperSport",
+  maker: "Ducati",
+  engine: "937cc"
+};
+
+//Object.defineProperty(bike, "name", { configurable: false });
+
+delete bike.name;

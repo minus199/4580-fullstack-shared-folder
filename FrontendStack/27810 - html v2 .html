@@ -1,0 +1,3833 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>גון בריינס הדרכה</title>
+
+    <script id="t_1_1" type="text/template">
+        <div>
+            <p>
+                בעידן התקשורת של ימינו, רשת האינטרנט הינה במה מרכזית להעברת מידע, בין ארגונים ואנשים פרטיים, אשר מביעים את דעותיהם,
+                מציגים את תחביביהם ויוצרים קשר עם עמיתים.
+                <br />
+                היכולת לבניית אתרים הופכת לידע נדרש בשוק העבודה. כמו כן הופך ידע זה לכלי לביטוי אישי לפרט.
+                <br />
+                <br />
+                <b>Hyper Text Markup Language – HTML </b>היא שפה של פקודות לעיצוב, עימוד וקישור עמודי Web האחד לשני.
+                <br />
+                <br />
+                <b>HTML אינה שפת תכנות, </b>שפת HTML  נכתבת כטקסט פשוט ונשמרת כקובץ טקסט ללא עיצובים. טקסט זה עובר תהליך פיענוח ע"י
+                כלים כמו דפדפן אשר מזהה סימנים מוסכמים בטקסט אשר נותנים משמעות של עיצוב ופעולות שיש להציג.
+                <br />
+                <br />
+                הקובץ נשמר בסיומת htm או html וממוקם על גבי שרת Web. אין כל הבדל בין סיומות אלו.
+            </p>
+            <p>
+                <h2>תהליך הגלישה: </h2>
+                כאשר אנו גולשים באמצעות תוכנת דפדפן  לאתר מסוים, לדוגמא לאתר של ג'ון ברייס הדרכה, נכתוב את הכתובת הבאה:
+                <br />
+                <a href="http://johnbryce.co.il/index.html " onclick="window.open('http://johnbryce.co.il/index.html ')">http://johnbryce.co.il/index.html </a>
+                בשורת הכתובת.
+                <br />
+                .Uniform Resource Locator) URL) שורת הכתובת נקראת
+                <br />
+                <br />
+                נתחיל בפירוק הכתובת:
+            </p>
+            <ul>
+                <li>HTTP – הפרוטוקול בו אנחנו משתמשים עבור התקשורת.</li>
+                <li>johnbryce.co.il – זה שם השרת אשר אליו אנחנו  מתחברים. </li>
+                <li>index.html – שם הדף אותו אנחנו מבקשים מהשרת. </li>
+            </ul>
+            שלבי הגלישה:
+
+            <ol>
+                <li>
+                    מחשב הלקוח מתקשר לשרת DNS (הנמצא אצל ספקית האינטרנט בד"כ) בכדי להמיר את שם שרת האינטרנט בכתובת ה-IP  שלו.
+                    <br />
+                    במקרה שלנו שם השרת
+                    <a href="http://johnbryce.co.il " onclick="window.open('http://johnbryce.co.il ')">http://johnbryce.co.il </a>
+                    יומר לכתובת ה-IP הרלוונטית.
+                </li>
+                <li>שרת ה- DNS מקבל את הבקשה של ה- Client, מעבד אותה ומחזיר תשובה עם כתובת ה- IP הרלוונטית. </li>
+                <li>
+                    מחשב הלקוח מתחבר לכתובת ה-IP של השרת.
+                    <br />
+                    <b>הערה:</b> תהליך החיבור ל-DNS והמרת השמות מתבצע באופן אוטומטי ע"י הדפדפן, והוא שקוף למשתמש.
+                </li>
+                <li>
+                    מחשב הלקוח מקבל את דף האינטרנט (HTML) המבוקש מהאתר.
+                    <br />
+                    להלן תרשים אשר מתאר את התהליך:
+                    <br />
+                    <img alt="p1" src="data:image/png;base64,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oJ+kyg2EKsm6SZ588sk99tgDcerZs+e0adP23HNPi5MxAYuTyRzIDyKk2y0hglatXbsWlVIEcapQocLOEaxjQDZgs2RR5Iwzzli1alWbNm122WWX6tWrqwA27L333u+++65WTjTI5hCqihUrqgzVKaNUKEhapUqV7bbbrmrVqjTIhpQFGLvuuqvKkAI9pLDcmjVrhg4koZYKh00ItYxBijKxRfq20047YfiynjEBi5PJHGGFFAwFda1PLuLENM3Efeutt3bv3n37vF9z+FkEhujRo8fKlSt1zwkoVqlSJc31+R6IoNkFCxZMz+PPf/4zS5annnoKgxTuv//+Bg0a0AJ11QLCRlzlZbBaevrppxUBtSBbBinBEPn973/PSojW1CxiNnToUG2RVMVoMDQili9fnvqYjDEWJ5NJpEAByZIMZVEGcWJCZ6UyZ86cIUOGML8zszO/S5wAGyROzZs3l0sVPRCBvdtuuyFOYeUE0dZiUne98u57idWrV9900026I0UKV1111Q033HD99deT/jYCA26MwLjuuuvkBjtpwPjx4y+99NJwm2rEiBGvv/4626ID4TZbtPH4A8FQV40xwuJkMocm4gAzsu4/oRZM2SrDbI4gsXKaPXu2xCkWpQjpEKme1mvRooVcUC4gTiyVEKdevXrRuJqNNhjrAZuTK4ioQCRbqSxkpmHDhqzYDj744MMjWhXgsMMOa926tWwMgc3Wa9WqxZrvk08+Ye90DVOCFLaCre0q1XajbhpjYixOJtNoggbN10mIIE6sgVg5hZdwk7IUQJz+85//NG3alCxcra6EVk4XXngh4qRNaIsSwrVr1+p37cgS0ZZjKICQrFmz5p577qldu/b8+fNZV8G3P+Xrr7/+5ptvMEj1i3yK4/4ygk3k5uaqcbWp/SUlggvEsVMfxMY+CmO2cSxOJnMwHWtGlgGar0nnzJlzwgkndOnSZZ999kFgWLUceeSRskHilCTfZT0IAhbuOaEuNEiz06dP17bYdBADpepG1LsYZIP4ww8/XLdu3UWLFmGHYoIySkXIVYO/iiAe2k/VT7RAFqmCoUzUkjHmf1icTOaIJufURBxm5HXr1k2ePPm6664bN26cXlRq2bLlvvvui50kuhOUunMTuP/++1nfTJgwYeTIkXEoj9GjR3/66aeIU6NGjXCpeOWVV95www133HEHiy1t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">
+                </li>
+            </ol>
+            <p>
+                <b>חשוב מאוד! </b>
+                <br />
+                ברגע זה אין קשר בין האתר לבין הלקוח. שינויים באתר יוצגו במחשב הלקוח רק בגלישה חוזרת בלבד(או באמצעות Refresh).
+                <br />
+                <br />
+                כאשר הדף המבוקש מגיע למחשב הלקוח תוכנת הדפדפן היא זו אשר מפענחת את הוראות השפה ומציגה את הטקסט
+                ושאר האובייקטים (תמונות, קישורים ,צבעי הרקע וכדומה במקומם).
+                <br />
+                <br />
+                אתר אינטרנט טיפוסי כולל מספר קבצי HTML, תמונות וקבצי מולטימדיה המקושרים בינם לבין עצמם ולאתרים אחרים.
+                <br />
+                <br />
+                עמוד הפתיחה המקבל את פנינו נקרא<b> Home Page</b>  והוא הדף הראשי
+                אשר מפנה לכל הקבצים האחרים באתר( <b>Site</b>) התמונות, קבצי הקול ושאר עמודי ה- HTML המקושרים בעזרת פקודות טקסטואליות לעמוד זה.
+                <br />
+                <br />
+                קובץ הקוד, המכיל את פקודות html נקרא גם <b>Source</b>. על מנת לראותו ניתן לעבור
+                .<b>Page Source</b> או <b>Source</b> ולבחור בפקודת <b>View</b> לתפריט
+            </p>
+            <h2>בניית האתר </h2>
+            <b>תהליך בניית האתר כולל מספר שלבים: </b>
+            <ol>
+                <li>תכנון המבנה והעיצוב של האתר.</li>
+                <li>בחירת כלי הכתיבה והכנת החומרים (גרפיקה וטקסט). </li>
+                <li>כתיבת הדפים ובדיקתם מקומית (בדיסק).</li>
+                <li>העלאת האתר לשרת האינטרנט ובדיקתו על הרשת. </li>
+                <li>תחזוקה שוטפת ועדכון האתר. </li>
+            </ol>
+        </div>
+
+    </script>
+
+
+    <script id="t_1_2" type="text/template">
+        <div>
+            <p>
+                שפת HTML התחילה, כמו הרבה טכנולוגיות, אצל האקדמיה ובמהרה אומצה גם ע"י צבא ארה"ב. השנים היו שנות ה-60. השפה עוד לא נקראה HTML אלא SGML.
+                זו הייתה שפה מאוד קשה לשליטה שכן היא הייתה נוקשה מאוד וכל טעות קטנה יכלה להרוס את המבנה העדין שלה .
+                <br />
+                לקראת שנות ה-80 כשמחשבים התחילו להיכנס לכל בית והאינטרנט תפס תאוצה הרבה חברות מסחריות לקחו את ה- SGML
+                והפכו אותה לשפה יותר ידידותית למשתמש וקלה לשליטה וקראו לה HTML. כל חברה בנתה דפדפן משלה ומתוך דחף עיסקי בלבד, תוך רצון למשוך
+                אליה יותר ויותר גולשים ואתרים, הוסיפו ל HTML תוספות נוספות שהיו ייחודיות לכל דפדפן .
+                <br />
+                בנוסף, וזה חשוב, החברות החליטו כי ב HTML לא יהיו שגיאות ולא ניתן להרוס את המבנה של העמודים שיוצרים .כלומר תמיד תהיה תוצאה כלשהי ובמקרה של ספק
+                ,הדפדפן "ינחש" למה התכוון הכותב ויפעל לפי החלטות קבועות מראש .
+                <br />
+                החלטה זו באה במחיר של חוסר סדר בשפה והרגלים לא טובים של כותבי HTML שלא תוקנו לעולם כיוון שלא נחשבו לטעות. בנוסף כל דפדפן של
+                חברה אחרת הציג עמוד HTML בצורה אחרת ולכן היה צורך בפתרון אחר.
+                <br />
+                <br />
+                ב- 1994 הוחלט על הקמה של ארגון ללא מטרת רווח אשר תפקידו יהיה לקבוע תקן אחיד לשפה. ארגון זה כלל שיתוף פעולה של חברות,
+                אנשי אקדמיה, צבא ואפילו דת .הארגון נקרא w3 consortium (מילה לטינית שמשמעותה הוא שיתוף פעולה לקידום מטרה משותפת.
+                ) תוכלו להציץ באתר שלהם:
+                <a href="http://www.w3.org" onclick="window.open('http://www.w3.org')">http://www.w3.org</a>
+                <br />
+                כך קמו גרסאות של HTML, לא מתחרות אלא משפרות אחת את השנייה .HTML פותח עד גרסה 4.1.
+                <br />
+                הזמן הוא כבר תחילת שנות ה-2000. באותה תקופה התחילה שפה חדשה שנקראת <b>XML</b> לכבוש את העולם. שתי השפות מבוססות על עולם התגיות,
+                אותו אתם עומדים להכיר היטב במהלך הקורס הנוכחי. XML היא שפה מאוד
+                נוקשה ועם חוקים ברורים.למעשה, כיוון ש- XML נחשבת שפה  "נוקשה" היא הייתה מועמדת מושלמת לטיפול בבעיה שנוצרה בעולם ה- html.
+                <br />
+                <br />
+                כידוע, עולם ה-html הוא עולם מאוד חופשי וחסר הגדרות, משמע, ניתן היה לכתוב html בכמה צורות ובלי אחידות.
+                לדוגמא, ניתן היה לכתוב תגית  של &lt br&gt
+                מבלי לסגור אותה או שמא ניתן היה לכתוב
+                &lt BR&gt באותיות גדולות. חוסר אחידות זה גרם לבעיה בכך שהדפדפנים נאלצו להתאים את עצמם לקרוא ייצוג שונה של אותו המידע,
+                אולם לעיתים היו גרסאות של אותו המידע שהדפדפנים לא ידעו לחפש ולהציג כראוי, מה שפגע בחוויות הגלישה. למעשה,
+                בנקודה זו נכנס ה- XHTML אשר יודע לקחת את האלמנטים של html ולשלב אותם עם הקשיחות של שפת ה- XML ובכך  "מקל על החיים" של יוצרי הדפדפנים.
+                <br />
+                <br />
+                <b>מילת אזהרה:</b>  דפדפנים עדיין שייכים לחברות שמטרתן למשוך אליהם אתרים ומשתמשים, לכן עדיין נשמרה המסורת של-HTML
+                אין שגיאות. הסיבה היא מסחרית בלבד וזו גם הסיבה שרוב הדפדפנים היום תומכים גם בגרסאה HTML4.1 כמו ב XHTML1.0.
+                <br />
+                חוברת זו נכתבה לפי התקן החדש יותר לפי המלצת ה- w3c.
+                <br />
+                קיים תקן חדש יותר -  HTML 5. קיים פרק בנושא זה בסוף החוברת.
+
+            </p>
+        </div>
+    </script>
+
+
+    <script id="t_1_3" type="text/template">
+        <div>
+            <p>
+                מאוד קל לציית לחוקי התקן החדש כדי לכתוב XHTML תקין. מי שהכיר בעבר HTML ימצא שעליו לרכוש כמה הרגלים חדשים אך אילו נרכשים במהרה.
+                <br />
+                לנוחיותכם, רוכזו כאן חוקי הכתיבה המלאים לפי תקן XHTML.
+                החוקים לא יהיו מובנים כרגע שכן הם מכילים מושגים שלא נלמדו. בכל מקום בו נסביר מושג חדש, תהיה תזכורת לחוק המתאים
+                <br />
+                <br />
+                סמנו עמוד זה כדי לחזור אליו בשלב יותר מאוחר בקריאה.
+                <br />
+                <br />
+            </p>
+            <ol>
+                <li>כל התגיות יכתבו באותיות קטנות.</li>
+                <li>השפה רגישה לאותיות קטנות או גדולות) case sensitive(. </li>
+                <li>יש לסגור כל תגית.</li>
+                <li>לכל תכונה חייב להיות ערך. </li>
+                <li>כל ערך של תכונה חייב לבוא בתוך גרשיים כפולות או רגילות. </li>
+                <li>תכונה לא יכולה לחזור על עצמה פעמיים בתוך אותה תגית. </li>
+                <li>קינון תגיות תקני. </li>
+            </ol>
+        </div>
+    </script>
+
+
+    <script id="t_1_4" type="text/template">
+        <div>
+            ישנן שלוש דרכים מרכזיות ליצירת דפי HTML ולכל אחת מהן היתרונות והחסרונות המייחדים אותה:
+            <ul>
+                <li>
+                    <b>כתיבת הקוד בעורך טקסט פשוט </b>(כמו: פנקס הרשימות של "חלונות")
+                    בשיטה זו אנו כותבים את הפקודות ידנית ובונים למעשה את הדף שורה אחר שורה.
+                    <br />
+                    <b>יתרונות -</b> שליטה ישירה בשפה, המאפשרת דקויות והצגת דף תואם לדפדפנים שונים.
+                    <br />
+                    <b>חסרונות -</b> זמן לימוד ,טעויות הקלדת פקודות וזמן יצירה.
+                    <br />
+                </li>
+                <li>
+                    <b>ממירים </b>
+                    כלי תוכנה הלוקחים קובץ קיים כלשהו וממירים אותו. קיימים ממירים כמעט לכל סוג קובץ.
+                    .ועוד  PowerPoint ,Excel ,Word  לדוגמא קבצי
+                    <br />
+                    <b>יתרונות -</b> מהיר, מאפשר המרת מאגר מידע קיים.
+                    <br />
+                    <b>חסרונות - </b>קשה מאוד לערוך שינויים, שליטה גראפית מוגבלת, מחולל קוד מסורבל.
+                    <br />
+                </li>
+                <li>
+                    <b>עורכי HTML</b>
+                    זהו סוג של תוכנות שנועד לאפשר בנייה של דפי HTML בצורה קלה ומהירה תוך השלמת טקסט או הכוונה לטקסט נכון. העורך
+                    (Editor) נותן אפשרות הכנסת פקודות מתוך תפריטים ועיצוב נוח.
+                    <br />
+                    קיימים שני סוגים עיקריים של עורכים:
+                    <ol>
+                        <li>
+                            <b>עורכים טקסטואליים -</b> העבודה מתבצעת על קוד המקור. הכנסת הפקודות מתוך תפריטים ואשפים.
+                            <br />
+                            <b>יתרונות - </b>שליטה ישירה ומהירות יצירה טובה.
+                            <br />
+                            <b>חסרונות - </b>צריך לדעת HTML.
+                        </li>
+                        <li>
+                            <b>עורכים ויזואליים / מחוללי HTML -</b>  מאפשרים יצירת דף כמו במעבד .
+                            .What You See Is What You Get) WYSIWYG) תמלילים, עריכה בשיטת
+                            התוכנה יוצרת את הקוד בעצמה, לפי עיצוב המשתמש.
+                            <br />
+                            <b>יתרונות - </b>קלות, מהירות וללא ידע בשפה ניתן להגיע לתוצאות יפות
+                            <br />
+                            <b>חסרונות - </b>תלות במגבלות התוכנה, בחלק מהמקרים ההתאמה היא לאחד מהדפדפנים בלבד,
+                            הקוד שנוצר ע"י המחולל לא תמיד יהיה הקוד האופטימאלי לביצוע הפעלות
+                            <br />
+                            דוגמאות:
+                            ... Adobe Dreamweaver, Microsoft Expression Web
+                        </li>
+                    </ol>
+
+                </li>
+            </ul>
+        </div>
+    </script>
+
+
+    <script id="t_1_5" type="text/template">
+        <div>
+            <p>
+                את הקבצים הראשונים שלנו נקליד ב- (Notepad)פנקס הרשימות וזאת בעיקר לצורך לימוד השפה.
+                <br />
+                ניתן להשתמש בסביבות חכמות ועשירות יותר, כגון:
+                <br />
+                Notepad++)
+                <a href="http://notepad-plus-plus.org" onclick="window.open('http://notepad-plus-plus.org ')">http://notepad-plus-plus.org </a>)
+                או
+                <br />
+                Microsoft Visual Web Developer Express)
+                <a href="http://www.microsoft.com/express" onclick="window.open('http://www.microsoft.com/express ')">http://www.microsoft.com/express</a>)
+                <br />
+                <br />
+                לפתיחת פנקס הרשימות בחר ב- התחל -> תוכניות -> עזרים -> פנקס הרשימות.
+                <br />
+                או
+                <br />
+                הפעל את חלון התחל -> run והקש את המילה notepad. לחץ enter.
+                <br />
+                <br />
+                כעת ניתן לכתוב את קובץ הHTML-. הקלד את הקוד המבוקש ולאחר שסיימת לחץ בתפריט הראשי על "קובץ" ולאחר מכן על "שמירה בשם".
+                <br />
+                בחלון הדו שיח שנפתח בצע את הפעולות הבאות:
+            </p>
+            <ol>
+                <li>בשדה "שמור כסוג" שנה את סוגי הקבצים מ"קבצי טקסט" ל"כל הקבצים ." </li>
+                <li>בשדה "שמור ב" בחר את התיקייה בה תשמור את הקובץ. </li>
+                <li>
+                    בשדה "שם הקובץ" הקלד את שם הקובץ עם סיומת htm או html.
+                    <br />
+                    test.html
+                </li>
+            </ol>
+            על מנת לראות את תוצאות הקוד יש לפתוח את הקובץ באמצעות הדפדפן.
+            <br />
+            <br />
+            <b>כעת טען את הקובץ בעזרת הפעולות הבאות: </b>
+            <ol>
+                <li>יש לעבור לתיקיה בה נשמר הקובץ . </li>
+                <li>יש ללחוץ לחיצה כפולה על קובץ ה- HTML. </li>
+            </ol>
+            <br />
+            בכדי לשנות את הקוד באותו קובץ ניתן לפתוח את הקובץ לעריכה שוב עם Notepad (תפריט קובץ -> פתח).
+            <br />
+            <br />
+            <b>שימו לב! </b>
+            <br />
+            <b>שינוי בקובץ לא יראה בדפדפן עד אשר יתבצע רענון לדף. </b>
+            <br />
+            <br />
+            זכרו כי אחרי טעינת עמוד, הקשר בין העמוד לשרת, בו נמצא הקובץ, מנותק .
+            על פי עקרון זה תוכלו לבצע שינוים בקוד המקור של העמוד, לשמור ואז ללחוץ על כפתור ה- Refresh (או כפתור F5) כדי להורות לדפדפן לקרוא מחדש לקובץ
+            ובכך לקבל את הקוד ששינינו.
+        </div>
+    </script>
+
+    <script id="t_1_6" type="text/template">
+        <center>
+            <h2>מבוא לשפת התגיות</h2>
+            <div onclick="window.open('https://www.youtube.com/watch?v=4NdcK7x0TIM&list=PLdZoWGdVe4Btc-Wm1YTiTgvIJqLbziHto&index=9')">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4NdcK7x0TIM" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
+            </div>
+        </center>
+    </script>
+
+    <script id="t_2_1" type="text/template">
+        <div>
+            HTML הינה שפה שבנויה מתגיות.
+            <br />
+            מה היא תגית? תגית היא טקסט בעל אשר מוקף בסימנים &lt &gt.
+            <br />
+            הטקסט שבתוך הסוגריים האלה הוא בעל משמעות כך שהדפדפן ידע לפרש אותו כפקודה של עיצוב או הכנסת אובייקט כמו תמונה או קישור.
+            <h2>שלד מסמך HTML: </h2>
+            <p class="eng">
+                &lt!DOCTYPE html&gt
+                <br />
+                &lt html&gt
+                <br />
+                &nbsp &nbsp &nbsp &lt head&gt
+                <br />
+                &nbsp &nbsp &nbsp &nbsp &nbsp  &lt title&gt&lt /title&gt
+                <br />
+                &nbsp &nbsp &nbsp&lt /head&gt
+                <br />
+                &lt body&gt
+
+                <br />
+                &lt /body&gt
+                <br />
+                &lt /html&gt
+            </p>
+            לכל מסמך html יהיה מבנה שלד זהה .
+            <br />
+            בוודאי שמתם לב שיש כאן תגיות כפולות עם הבדל של סימן אחד (הסימן '/'). מיד נסביר את סוגי התגיות,
+            כרגע מספיק לומר שהתגית הראשונה פותחת איזור כתיבה בעל תפקיד מסוים, והתגית שניה בעלת אותו שם, סוגרת אותו.
+            <h2>הצהרת פתיחה</h2>
+            <b>Document Type Definitions DTD </b>
+            <br />
+            באמצעות פקודת ה-<b>DOCTYPE</b>  מקבל הדפדפן מידע אודות הקובץ – סוג הקובץ, שפת התוכן (אנגלית/ עברית/ וכו'), התקן שבה כתוב הקובץ, ועוד.
+            <br />
+            קיימים 5 סוגי קבצי XHTML:
+            <p class="eng">
+                XHTML 5:
+                <br />
+                &lt!DOCTYPE html&gt
+                <br />
+                <br />
+                <br />
+                XHTML 1.0 Transitional:
+                <br />
+                &lt !DOCTYPE html PUBLIC
+                "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt
+                <br />
+                <br />
+                <br />
+                XHTML 1.0 Strict:
+                <br />
+                &lt !DOCTYPE html PUBLIC
+                "-//W3C//DTD XHTML 1.0 Strict//EN"
+                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt
+                <br />
+                <br />
+                <br />
+                XHTML 1.0 Frameset:
+                <br />
+                &lt !DOCTYPE html PUBLIC
+                "-//W3C//DTD XHTML 1.0 Frameset//EN"
+                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt
+                <br />
+                <br />
+                <br />
+                XHTML 1.1:
+                <br />
+                &lt !DOCTYPE html PUBLIC
+                "-//W3C//DTD XHTML 1.1//EN"
+                "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt
+            </p>
+            <br />
+            <b>אזורים מרכזיים ב- html: </b>
+            <ul>
+                <li>
+                    תגית html מגדירה את האיזור הכי כללי שמכיל בתוכו את שאר האיזורים.
+                    איזור זה מגדיר שמדובר על מסמך html. תגית זו היא התגית הראשית שמכילה את כל שאר התגיות נקראת גם "תגית השורש ("root element).
+                </li>
+                <li>
+                    תגית head מכילה הגדרות כלליות על העמוד, כגון: כותרת הדף (title),
+                    מידע עבור מנועי חיפוש ,והגדרות נוספות. קוד הכתוב בתוך תגית זו לא ייראה כחלק מדף האינטרנט בדפדפן.
+                </li>
+                <li>תגית body מכילה את גוף המסמך ,כאן נכתוב את כל אשר נרצה שיופיע כחלק מהעמוד המוצג למשתמש. </li>
+            </ul>
+        </div>
+    </script>
+
+
+    <script id="t_2_2" type="text/template">
+        <div>
+            תגיות html מתחלקות לשני סוגים:
+            <ul>
+                <li>תגית מכולה </li>
+                <li>תגית ריקה </li>
+            </ul>
+            <b>תגיות מכולה: </b>
+            <br />
+            תגיות מכולה הן תגיות אשר תמיד יכללו תגית פתיחה, תגית סגירה וערך ביניהן. הערך יושפע מהתגיות .
+            <br />
+            לדוגמא, במידה ונרצה שהטקסט "Hello" יוצג בפיסקה, אנו נעטוף אותו בתגית p בצורה הבאה:
+            <p class="eng">&lt p&gt Hello&lt /p&gt</p>
+            במידה והיינו מפרקים את דוגמא זו לרכיבים, היינו מקבלים את הרכיבים הבאים:
+            <ul>
+                <li>&lt p&gt - תגית פתיחה (התחלת הפיסקה, במקרה זה). </li>
+                <li>.ערך – Hello</li>
+                <li>&lt /p&gt - תגית סגירה (סיום הפיסקה, בדוגמא זו). </li>
+            </ul>
+            <br />
+            <b>תגיות ריקות: </b>
+            <br />
+            ישנן תגיות אשר תפקידן הוא להוסיף אלמנטים כאלה ואחרים לדף, וכחלק מהגדרתן אין צורך בערך ועל כן הן נקראות תגיות ריקות.
+            <br />
+            על מנת להוסיף קו מפריד בדף יש לכתוב את הפקודה הבאה:
+            <p class="eng">&lt hr /&gt</p>
+            <br />
+            <b>שימו לב!  </b>
+            <br />
+            תגיות ריקות נסגרות ישירות ללא תגית סוגרת אלא בתוך תגית הפתיחה באמצעות הוספת '/' לפני הסוגר הימני.(&lt;)
+            <br />
+            <br />
+            <b>
+                טעויות רבות נובעות מאי סגירה של פקודות מכולה או טעויות ברישומן.
+                פקודות שהדפדפן אינו מכיר או אינו יודע לבצען אינן גורמות לתקלות אלא לשיבוש התצוגה בלבד.
+            </b>
+
+        </div>
+    </script>
+
+
+    <script id="t_2_3" type="text/template">
+        <div>
+            כפי שהוסבר בתחילה, בתגית head נגדיר הגדרות כלליות עבור הדף. אחת ההגדרות הם title. בתגית זו נגדיר את כותרת הדף,
+            <br />
+            לדוגמא:
+            <div class="ex" id="ex1"></div>
+            שימו לב: תגית ה- title <b>אינה</b> מקבלת עיצוב נוסף, אלא טקסט בלבד .
+        </div>
+    </script>
+
+
+    <script id="t_2_4" type="text/template">
+        <div>
+            לתגיות HTML ניתן להוסיף תכונות אשר ישפיעו על עיצוב האלמנט שמיוצג ע"י התגית.
+            <br />
+            את התכונות אנו נוסיף בתגית הפתיחה (במידה ומדובר בתגית מכולה) או בתגית הריקה.
+            <br />
+            <br />
+            לדוגמא, הגדרת צבע עבור קו מפריד (תגית ריקה):
+            <p class="eng">&lt hr color="blue" /&gt</p>
+            דוגמא נוספת, הגדרת צבע רקע לדף (תגית מכולה):
+            <div class="ex" id="ex2"></div>
+            <b>חשוב מאוד:</b>
+            <br />
+            לפי תקן XHTML חובה לכתוב את ערך התכונה בתוך גרשיים.
+            <ul>
+                <li>ניתן לכתוב תכונות ללא הגבלה. </li>
+                <li>אין כלל חשיבות לסדר כתיבת התכונות. </li>
+                <li>לא ניתן לחזור על אותה התכונה יותר מפעם אחת באותה תגית. </li>
+            </ul>
+        </div>
+
+    </script>
+
+
+    <script id="t_2_5" type="text/template">
+        <div>
+            ניתן ואף רצוי להוסיף הערות לקוד ה- HTML. הערות אלו אינן חלק מהקוד ולכן אינן נקראות ע"י הדפדפן ואינן מוצגות כחלק מהדף.
+            מטרת ההערות להציג מידע אשר יאפשר לקורא הקוד להבינו ביתר קלות.
+            <br />
+            תחביר לכתיבת הערות:
+            <p class="eng"><!-- הערה נכתוב כאן--></p>
+            <b>זכרו:</b> הקוד שלכם פתוח וקריא לכל מי שמעוניין לכן מומלץ להיעזר בהערות בזמן
+            כתיבת האתר אך מומלץ להוריד הערות לא מתאימות לפרסום לפני העלאת האתר לאוויר.
+        </div>
+    </script>
+
+
+    <script id="t_2_6" type="text/template">
+        <div>
+            <ol>
+                <li>בנו עמוד html בסיסי. הציגו את התאריך של היום ב- title ואת שמכם המלא על העמוד.</li>
+                <li>סגרו את העמוד ופתחו אותו מחדש. ודאו שאתם יודעים איפה שמרתם את הקובץ מלכתחילה. </li>
+                <li>פתחו את קוד המקור מחדש ושנו אותו. הפכו את הסדר בין שמכם הפרטי ושם המשפחה. הציגו את העמוד החדש על הדפדפן. </li>
+            </ol>
+        </div>
+    </script>
+
+    <script id="t_2_7" type="text/template">
+        <center>
+            <h2>יסודות הכתיבה</h2>
+            <div onclick="window.open('https://www.youtube.com/watch?v=t_efefiLJJk&index=2&list=PLdZoWGdVe4Btc-Wm1YTiTgvIJqLbziHto')">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/t_efefiLJJk" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
+            </div>
+        </center>
+    </script>
+    <script id="t_3_1" type="text/template">
+        <div>
+            <h2>מעברי שורה: </h2>
+            ב- html ירידת שורה באמצעות Enter אינה משפיעה כלל.
+            <br />
+            על מנת לרדת שורה יש להשתמש בתגית הריקה br בצורה הבאה:
+            <div class="ex" id="ex3"></div>
+            <h2>פסקאות: </h2>
+            על מנת להוסיף פסקאות ניתן להשתמש בתגית p. תגית זו מגדירה מעבר פיסקה, יוצרת שורת ריווח לפני ואחרי הקוד בפסקה:
+            <br />
+            לדוגמא:
+            <div class="ex" id="ex4"></div>
+            עיצוב התגית p:
+            <ul>
+                <li>
+                    :Align
+                    <br />
+                    ניתן להגדיר מה כיוון הטקסט באמצעות התכונה Text-align של CSS.
+                    <br />
+                    <ol>
+                        <li>center – יישור למרכז. </li>
+                        <li>right – יישור לימין. </li>
+                        <li>left – יישור לשמאל.</li>
+                        <li>justify – יישור דו-צידי (ימין ושמאל). </li>
+                    </ol>
+                    לדוגמא:
+                    <br />
+                    קטע קוד זה יגרום להצגת הפסקה במרכז הדף.
+                    <div class="ex" id="ex5"></div>
+                </li>
+                <li>
+                    :Title
+                    <br />
+                    ניתן להגדיר מה יהיה הכיתוב ב- ToolTip כאשר סמן העכבר יעמוד על הפסקה.
+                    <br />
+                    לדוגמא:
+                    <div class="ex" id="ex6"></div>
+                </li>
+            </ul>
+            <h2>הוספת מרווחים בין מילים:</h2>
+            לעיתים אנו נרצה להציג בדף ה- html שתי מילים עם מספר רווחים ביניהן (במקום רווח
+            יחיד). גם אם ננסה לכתוב בדף ה- html מספר רווחים בין שתי מילים, הדפדפן יציג זאת כרווח יחיד.
+            <br />
+            בכדי  "להכריח" את הדפדפן להכניס יותר רווחים, עלינו להשתמש בביטוי מיוחד -
+            .רווח קשיח - Non Breakable Space : ראשי תיבות של - &amp;nbsp;
+            <br />
+            השימוש - בין המילים או האותיות הרצויות, כתוב באותיות קטנות וחוזר מספר פעמים כמספר הרווחים הרצוי.
+            <div class="ex" id="ex7"></div>
+            צורת כתיבה זו נקראת Entities .Entity נועדו
+            לאפשר לכתוב סימנים מיוחדים שאין דרך לייצג אותם מהמקלדת או
+            שאם נרשום אותם בצורה רגילה הם יכולים להתנגש עם סימנים שיש להם משמעות מיוחדת, כמו סימן > שפותח תגית או סימן &
+            שפותח Entity. הפורמט הוא קבוע, פותחים עם & וסוגרים עם ; , הקוד שבאמצע הוא שיגדיר מה יוצג על המסך.
+            <h2>סימנים נוספים: </h2>
+            ישנם מספר תווים נוספים שאינם ניתנים להצגה כאשר הם נכתבים בצורה רגילה:
+            <ul>
+                <li>&amp; - עבור סימן זה נכתוב ;amp&amp;</li>
+                <li>&gt;- עבור סימן זה נכתוב ;gt&amp; </li>
+                <li>&lt; - עבור סימן זה נכתוב ;lt&amp;</li>
+                <li>&acute; – עבור סימן זה נכתוב ;acute&amp;</li>
+                <li>&quot; – עבור סימן זה נכתוב ;quot&amp;</li>
+                <li>&reg; - עבור סימן זה נכתוב ;reg&amp;</li>
+                <li>&copy; - עבור סימן זה נכתוב ;copy&amp;</li>
+            </ul>
+            <h2>כותרות: </h2>
+            על מנת להוסיף כותרות לדף נשתמש בתגיות h1 עד  h6, כאשר h1 זו הכותרת הגדולה ביותר ו- h6 הקטנה ביותר.
+            <br />
+            ניתן להוסיף את התכונה align ולהשפיע על יישור הכותרת.
+            <br />
+            דוגמא להשפעות התגית: הדגשה וירידת שורה, :
+            <div class="ex" id="ex8"></div>
+        </div>
+    </script>
+
+
+    <script id="t_3_2" type="text/template">
+        <div>
+            כאשר נרצה לבצע עיצוב הקשור לגופן הטקסט (לדוגמא: צבע הטקסט, סגנון הגופן, גודל הטקסט וכדומה), נשתמש בתכונות CSS לעיצוב ה- font.
+            <br />
+            רלוונטי לכל טקסט (פסקאות, קישורים, כותרות וכו').
+            <ul>
+                <li>
+                    <b>color – </b>צבע הטקסט, ניתן לכתוב את ערך התכונה בצורות הבאות:
+                    <ul>
+                        <li>
+                            שם הצבע  (לדוגמא : red, blue וכדומה)
+                            <p class="eng">color:Red; </p>
+                        </li>
+                        <li>
+                            rgb  – כתיבת ערכים עבור הצבעים אדום, ירוק וכחול, לדוגמא:
+                            <p class="eng">color:rgb(0,30,250); color:rgb(0%,100%,0%); </p>
+                        </li>
+                        <li>
+                            בפורמט הקסדצימלי, לדוגמא:
+                            <p class="eng">color:#00ff33; </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>font-size – </b>גודל גופן, ניתן להגדיר את הגודל כאבסולוטי או יחסי.
+                    <br />
+                    לדוגמא:
+                    <p class="eng">
+                        font-size:20pt;
+                        <br />
+                        font-size:2em;
+                        <br />
+                        font-size: x-large;
+                    </p>
+                    <ul>
+                        <li>
+                            יש גם אפשרות לגודל קבוע שנקבע ע"י הדפדפן וניתן להשתמש בו באחד מהערכים הבאים:
+                            <p class="eng">xx-large ,xx-small, x-small, small, medium, large, x-large  </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>font-family - </b>Miriam, david, gutman-yad וכדומה.
+                    <br />
+                    ניתן ליצור רשימה של סוגי גופנים מופרדים בפסיקים.
+                    נהוג לרשום מספר גופנים מפני שלא בכל מחשב מותקנים כל הגופנים. הדפדפן משתמש בגופן הראשון מתוך הרשימה שמותקן גם במחשב הלקוח.
+                    <br />
+                    אם אף אחד מהגופנים המבוקשים לא קיים, ישתמש הדפדפן בגופן ברירת המחדל של הדפדפן. מסיבה זו,
+                    כדאי לבדוק את תצוגת הדף עם מספר פונטים רבים ככל האפשר ולמצוא ולכתוב לפי הסדר את המתאימים ביותר.
+                    <br />
+                    כשיוצרים רשימת גופנים לאתר האינטרנט באופן טבעי
+                    נתחיל עם הגופנים המתאימים ביותר לעיצוב שבחרנו ונמשיך עם חלופות קרובות פחות ופחות. מומלץ מאוד לסיים את הרשימה עם משפחה גנרית.
+                    בצורה זו לפחות נבטיח שהדף יוצג עם גופן מאותה משפחה אם הגופן המסוים אינו זמין.
+                    <br />
+                    דוגמא:
+                    <p class="eng">font-family:Times New Roman,Garamond,Arial </p>
+                </li>
+                <li>
+                    <b>Letter-spacing - </b>הוספת רווחים בין האותיות.
+                    <p class="eng">letter-spacing:5px </p>
+                    תכונה שימושית במיוחד כאשר רוצים להדגיש חלקי טקסטים חשובים.
+                </li>
+                <li>
+                    <b>Direction - </b>הגדרת כיוון הטקסט, מימין לשמאל או משמאל לימין
+                    <p class="eng">direction:rtl; </p>
+                </li>
+                <li>
+                    <b>Text-decoration - </b>מקבל את אחת או יותר מהתכונות הבאות:
+                    <br />
+                    .underline, line-through ,overline , none
+                    <br />
+                    באמצעות תכונה זו ניתן לאמר לדפדפן להדגיש בצורה מסויימת את הטקסט. אפשר לתת יותר מערך אחד:
+                    <br />
+                    הוספת קו תחתי:
+                    <p class="eng">text-decoration:underline;  </p>
+                    הוספת קו עילי ותחתי:
+                    <p class="eng">text-decoration:overline underline;  </p>
+                </li>
+            </ul>
+            <b>דוגמאות לטבלאות צבעים לפי קודים: </b>
+            <br />
+            <a href="http//html-color-codes.com " onclick="window.open('http://html-color-codes.com ')">http://html-color-codes.com </a>
+            <br />
+            <a href="http://www.computerhope.com/htmcolor.htm " onclick="window.open('http://www.computerhope.com/htmcolor.htm ')">http://www.computerhope.com/htmcolor.htm</a>
+            <h2>קו מפריד </h2>
+            תגית hr יוצרת קו מפריד.
+            <p>&lt hr /&gt   </p>
+            <h2>הגדרות צבע כלליות למסמך </h2>
+            ניתן לקבוע מראש את צבע ברירת המחדל של טקסט הדף או את צבע רקע הדף כולו.
+            <br />
+            <br />
+            לשם כך נשתמש בתגית body  ונוסיף לה את התכונות הבאות ב- CSS:
+            <ul>
+                <li>
+                    <b>background-color - </b>לקביעת צבע הרקע של העמוד:
+                    <p class="eng">background-color:Gray; </p>
+                </li>
+                <li>
+                    <b>color - </b>לקביעת צבע ברירת המחדל של הטקסט בעמוד.
+                    <p class="eng">color:DarkBlue; </p>
+                </li>
+            </ul>
+            לדוגמא:
+            <div class="ex" id="ex9"></div>
+        </div>
+    </script>
+
+    <script id="t_3_3" type="text/template">
+        <center>
+            <h2>הכרת תגיות div,span,p</h2>
+            <div onclick="window.open('https://www.youtube.com/watch?v=8K5JF8KsB7c&index=3&list=PLdZoWGdVe4Btc-Wm1YTiTgvIJqLbziHto')">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8K5JF8KsB7c" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
+            </div>
+            <h2> הכרת תגיות h1 h6, br, hr</h2>
+            <div onclick="window.open('https://www.youtube.com/watch?v=lIoWQgdxx94&index=4&list=PLdZoWGdVe4Btc-Wm1YTiTgvIJqLbziHto')">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lIoWQgdxx94" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
+            </div>
+
+        </center>
+    </script>
+
+    <script id="t_4_1" type="text/template">
+        <div>
+            <p>
+                קישורים הם לב ה- Web. הקישורים מאפשרים לנו להפוך את הדף הפשוט לחלק מתהליך הגלישה,
+                שבו בלחיצה אנו עוברים מדף לדף, אתר לאתר,
+                מפעילים קבצי מולטימדיה, פונים לשירותי מידע שונים כגון: דואר ואף מבקשים להוריד (download) קבצים אלינו לדיסק.
+            </p>
+            <h2>התגית a:</h2>
+            על מנת להוסיף קישור לדף יש להוסיף את התגית a, תגית זו הינה תגית מכולה.
+            <b>תכונותיה של התגית: </b>
+            <ul>
+                <li>
+                    <b>href – </b>מיקום בדף אליו אנו רוצים להוביל את הגולש שלנו.
+                </li>
+                <li>
+                    <b>title – </b>טקסט שיוצג כאשר סמן העכבר עומד על הקישור.
+                </li>
+                <li>
+                    <b>target – </b>מיקום פתיחת הקישור, האפשרויות הם:
+                    <ul>
+                        <li>
+                            <b>_blank – </b>הקישור יפתח בחלון חדש.
+                        </li>
+                        <li>
+                            <b>_self – </b>הקישור יפתח בחלון בו נלחץ הקישור.
+                        </li>
+                        <li>
+                            <b>_parent – </b>הקישור יפתח במקום אב הדף (חלק מנושא המסגרות, יורחב בהמשך).
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            דוגמא לקישור:
+            <br />
+            כאשר נלחץ על הטקסט To JohnBryce נגלוש לכתובת <a href="http://www.johnbryce.co.il" onclick="window.open('http://www.johnbryce.co.il')">http://www.johnbryce.co.il</a>
+            <div class="ex" id="ex10"></div>
+            <b>חשוב מאוד! </b>
+            <br />
+            בחלק גדול מהמקרים  פיתוח האתר לא יבוצע על השרת עצמו, לכן חשוב מאוד שהכתובות יהיו נכונות תמיד, לדוגמא:
+            <p class="eng">&lt a href="c:\shimonTest.html"&gt shimon&lt /a&gt </p>
+            <b>קוד זה שגוי! </b>
+            <br />
+            כאשר נעביר את דף זה אל השרת, הדף shimonTest.html לא יימצא.
+            <br />
+            <b>הפיתרון:</b> לבעיות מסוג זה הוא כתיבת כתובות יחסיות  למיקום של הדף אותו אנו עורכים,
+            <br />
+            לדוגמא:
+            <br />
+            אם מיקום הקובץ הוא תיקייה אחת מעל לדף הנוכחי נכתוב את הקישור בצורה הבאה:
+            <p class="eng">&lt a href="../shimonTest.html"&gt shimon&lt /a&gt</p>
+            הסימון  /.. מעלה אותנו תיקיה אחת מעל לתיקיה הנוכחית. כאשר נכתוב את כל ההפניות הצורה זו, האתר שנכתוב יעבוד תמיד ובכל מקום.
+            <h2>ערכים אפשריים לתכונה href: </h2>
+            <ul>
+                <li>
+                    <b>קישור לדף בתוך האתר - </b>כפי שראינו בדוגמא הקודמת חשוב לכתוב את הכתובת בצורה יחסית, לדוגמא:
+                    <p class="eng">&lt a href="Default.html"&gt To default page&lt /a&gt</p>
+                    בדוגמא זו, הדף הנוכחי ו - Default.html נמצאים באותה תיקיה.
+                </li>
+                <li>
+                    <b>קישור לדף באינטרנט – </b>קישור לדף באינטרנט – ניתן לקשר מדף html  לדף אחר היושב ברשת האינטרנט,
+                    יש להקפיד על כתיבת הפרוטוקול (http, https), לדוגמא:
+                    <p class="eng">&lt a href="http://www.johnbryce.co.il"&gt To johnbryce&lt /a&gt</p>
+                </li>
+                <li>
+                    <b>קישור לתמונה – </b>ניתן להוסיף קישור לתמונה, פשוט יש  לכתוב את כתובת התמונה בתכונה זו, לדוגמא:
+                    <p class="eng">&lt a href="../pic.jpg"&gt Open pic&lt /a&gt</p>
+                </li>
+                <li>
+                    <b>קישור לדואר אלקטרוני – </b>ניתן להוסיף קישור לדואר אלקטרוני,
+                    כאשר נלחץ על קישור זה תיפתח הודעה חדשה בתוכנת הדוא"ל שמותקנת אצל המשתמש
+                    ,כאשר הנמען יהיה הכתובת הכתובה בקישור .  על מנת להוסיף קישור זה יש להשתמש במילה mailto ולאחריה כתובת הנמען בצורה הבאה:
+                    <p class="eng">&lt a href="mailto:shi1@johnbryce.co.il"&gt contact us&lt /a&gt</p>
+                </li>
+                <li>
+                    <b>קישור להורדת קובץ – </b>על מנת להוסיף קישור להורדת תוכן יש לכתוב בערך התכונה את כתובת הקובץ הרצוי, לדוגמא:
+                    <p class="eng">&lt a href="myMovie.avi"&gt Download myMovie&lt /a&gt</p>
+                </li>
+            </ul>
+        </div>
+    </script>
+
+
+    <script id="t_4_2" type="text/template">
+        <div>
+            כאשר אנו מפתחים אתר אנו חושבים בעיקר על נוחות הגלישה בו.
+            <br />
+            בדפים ארוכים נהוג להוסיף קישורים בתוך הדף על מנת לאפשר למשתמש  "לקפוץ "לחלקים מסוימים בדף.
+            <br />
+            עוגנים הם נקודות בדף המאפשרים גלישה ישירה.
+            <h2>כיצד ניתן ליצור קישור זה? </h2>
+            <b>שלב א': </b>יש להגדיר את המקומות בדף שאליהם אנו רוצים לאפשר את הקישורים
+            (לדוגמא: ראש הדף ). למעשה, בשלב זה אנו נגדיר את העוגנים.
+            <br />
+            יש להוסיף את התגית a  במקומות הנדרשים ולכתוב בתכונה ID שם ייחודי עבור מיקום זה, לדוגמא:
+            <p class="eng">&lt a id ="top"&gt this is the top of the file&lt /a&gt </p>
+            <b>שלב ב': </b>ניצור את הקישור לעוגן שיצרנו (בשלב א') ע"י תגית הקישור a, בדומה לקישור לעמוד html,
+            אלא שערך התכונה href  יהיה שם העוגן (בדוגמא למעלה top)
+            בתוספת התו "רשתית" #. סימון זה מגדיר שהקישור הוא לנקודה בתוך הדף ולא לקובץ חיצוני .
+            <br />
+            לדוגמא:
+            <div class="ex" id="ex11"></div>
+            הערך בתכונה id נקבע ע"י המפתח. מומלץ להגדיר שם הקשור לנושא העוגן.
+            <br />
+            <br />
+            אם ברצוננו להפנות לחלק מסוים של דף html מתוך דף html אחר, עלינו להקליד קודם את שם  הקובץ בקישור ולאחר מכן את שם העוגן.
+            <br />
+            לדוגמא:
+            <p class="eng">&lt a href="index.html#top"&gt back to the top of the file&lt /a&gt </p>
+            .top במיקום index.html קישור זה יפתח את הדף
+            <br />
+            <br />
+            <b>
+                ניתן להגדיר ID לכל אלמנט בדף ו"לגלוש" אליו באמצעות האלמנט a.
+                <br />
+                ניתן להגדיר עוגנים בכל מקום בדף (לאו דווקא לתחילת הדף).
+            </b>
+        </div>
+    </script>
+
+
+    <script id="t_4_3" type="text/template">
+        <div>
+            <ol>
+                <li>
+                    צור קובץ בשם yellow.html בתיקייה חדשה בשם colors עפ"י ההנחיות והדוגמא:
+                    <ul>
+                        <li>צבע הרקע יהיה כצבע שם הקובץ.</li>
+                        <li>הדף יכיל כותרת כשם הקובץ בעיצוב: קו תחתון, ממורכז וגודל h1. </li>
+                    </ul>
+                </li>
+                <li>
+                    כשם שיצרת את הקובץ yellow.html צור את הקבצים הבאים באותו אופן ושמור בתיקיית colors :
+                    <ul>
+                        <li>silver.html.</li>
+                        <li>pink.html.</li>
+                        <li>lightblue.html.</li>
+                        <li>orange.html.</li>
+                    </ul>
+                </li>
+                <li>צור קישורים (links) מכל קובץ לכל יתר הקבצים (בכל קובץ יהיו 4 קישורים). </li>
+            </ol>
+        </div>
+    </script>
+
+
+    <script id="t_5_1" type="text/template">
+        <div>
+            לעיתים אנו נרצה להעשיר את חווית הגלישה באתר שלנו. דרך טובה לעשות כן היא שילוב של תמונות ואובייקטים כמו סרטי וידאו ומולטימדיה.
+        </div>
+    </script>
+
+
+    <script id="t_5_2" type="text/template">
+        <div>
+            באינטרנט אנו מכירים מספר פורמטים של תמונות. הפורמטים הנפוצים הם <b>GIF, PNG</b> ו- <b>JPG</b>. קבצים אלו הם למעשה קבצי תמונה דחוסים כך שגודל התמונה קטן יחסית לתמונת מפת סיביות, כפי שפורמט BMP שומר.
+            <ol>
+                <li>
+                    <b>Joint Photographic Experts Group - JPEG</b>
+                    <br />
+                    פורמט אשר שיטתו שומרת איכויות של גווני ביניים ולכן הוא עדיף לתמונות סרוקות, בעלות גווני צבע רבים.
+                    <br />
+                    הדחיסה עובדת ב- 24 ביט צבע (16,777,216 צבעים) ועל כן מסוגלת לשמור את טווח הצבעים הגדול שצוין.
+                    <br />
+                    שיטת הדחיסה בפורמט JPEG היא <b>Loosy</b> – כלומר, בכל פעם ששומרים את הקובץ ,הוא עובר דחיסה מחדש ומידע הולך לאיבוד, ללא יכולת
+                    להחזיר אותו ועל כן מומלץ שלא לדחוס יותר מפעם אחת בפורמט JPEG.
+                </li>
+                <li>
+                    <b>Graphics Interchange Format -GIF</b>
+                    <br />
+                    פורמט בסיסי שבשיטת הדחיסה שלו משמיט את המעברים הרכים בין הגוונים ולכן הוא מתאים יותר ליצירת גרפיקה פשוטה, כפתורים או כל אלמנט וויזואלי פשוט אחר.
+                    <br />
+                    פורמט GIF מוגבל ל- 8 ביט צבע (256 צבעים) ותומך בשקיפות ברקע. שיטת הדחיסה בפורמט GIF
+                    היא <b>Lossless</b> – כלומר, המידע אינו הולך לאיבוד, כאשר דוחסים את תמונה ניתן לחזור ולשמור את אותה התמונה מבלי לאבד מאיכותה.
+                    <br />
+                    <b>Animated GIF - </b>פורמט המאפשר לשמור אנימציה המורכבת ממספר תמונת gif המוצגים אחד אחרי השני ברצף.
+                </li>
+                <li>
+                    <b>Portable Network Graphics – PNG</b>
+                    <br />
+                    זו היא דחיסה בעלת 2 אופנים: PNG-8 ו-PNG-24 .
+                    <br />
+                    משתמשת בטבלת צבעים בת 256 צבעים לייצוג התמונה (8-ביט). <b>PNG-24 –</b> משתמשת בטבלת צבעים בת מיליוני צבעים לייצוג התמונה (24-ביט)
+                    ובהתאם לכך שימושיהן, בניגוד לפורמט
+                    JPEGהדחיסה הינה בשיטת ה- Lossless ולכן תמונות הדחוסות בפורמט זה יהיו כבדות יותר מאשר בדחיסת JPEG.
+                </li>
+            </ol>
+            <br />
+            במידה ונרצה להוסיף תמונה, עלינו להשתמש בתגית קישור התמונה. תגית זו נקראת img וכחלק מהוספתה יש
+            גם לכתוב את התכונה src (מציינת את מקור הקובץ). לדוגמא:
+            <p class="eng">&lt img src="myPicture.jpg" /&gt </p>
+            <br />
+            עבור אוסף אנימציות ניתן לפנות לאתר –
+            <br />
+            <a href="http//www.iconbazaar.com" onclick="window.open('http://www.iconbazaar.com ')">http://www.iconbazaar.com</a>
+            <br />
+            או:
+            <br />
+            <a href="http//www.clipart.co.uk " onclick="window.open('http://www.clipart.co.uk  ')">http://www.clipart.co.uk </a>
+            <h2>שימוש בקבצי תמונה המצויים בתיקיית האתר</h2>
+            ניתן ואף רצוי להשתמש בקבצים השמורים בספריית האתר בדיסק השרת.
+            <br />
+            השימוש:
+            <p class="eng">&lt img src="שם קובץ התמונה אשר בספרית קובץ הדף" /&gt </p>
+            <b>דוגמא: </b>
+            <br />
+            קיים קובץ תמונה בספריה c:\html בשם face.gif ואנו רוצים להציגה בקובץ HTML בשם pic-try.htm השמור באותה ספריה. פקודת ה-HTML  אשר נכתוב תהיה:
+            <p class="eng">&lt img src="face.gif" /&gt</p>
+            <br />
+            באתרים בהם ישנם הרבה קבצי תמונה נהוג לרכז את התמונות בתת ספריה. בד"כ שם הספרייה יהיה images או pics.
+        </div>
+    </script>
+
+
+    <script id="t_5_3" type="text/template">
+        <div>
+            במידה והתמונה אינה נמצאת בספרית קובץ ה-HTML יש ליצור נתיב המפנה למיקום התמונה. ניתן להשתמש בנתיב יחסי ובנתיב מוחלט .
+            <br />
+            <b>נתיב יחסי </b>
+            <br />
+            הינו נתיב המראה את מיקום הקובץ <b>ביחס למיקום קובץ ה-HTML.</b>
+            <br />
+            בשיטה זו מומלץ להשתמש כיוון שבכל העברה של האתר, סדר תת הספריות לא משתנה ולכן אין שינוי בקוד. לדוגמא:
+            <table border="1">
+                <tr>
+                    <td><b>&lt img src ="images/face.gif" /&gt </b></td>
+                    <td>התמונה נמצאת בתת ספריה בשם images </td>
+                </tr>
+
+                <tr>
+                    <td><b>&lt img src="../face.gif" /&gt </b></td>
+                    <td>התמונה נמצאת בספריה מעל לספרית קובץ ה -HTML </td>
+                </tr>
+
+                <tr>
+                    <td><b>&lt img src="../../face.gif" /&gt </b></td>
+                    <td>התמונה נמצאת 2 ספריות מעל ספריית הקובץ. </td>
+                </tr>
+            </table>
+            <br />
+            <b>נתיב מוחלט</b>
+            <br />
+            הינו נתיב המגדיר את מיקומו המדויק של הקובץ בדיסק, דבר המקשה על
+            העברת האתר ושינויים. לדוגמא:
+            <p class="eng">&lt img src ="d:\nadav\html\images\face.gif" /&gt </p>
+            <b>שימו לב!</b> כאשר בונים אתר אינטרנט <b>מומלץ לעבוד עם נתיב יחסי</b>.
+            הסיבה לכך היא שברגע שנסיים את בניית האתר (על המחשב שלנו) נרצה לפרסמו. בכדי לפרסמו, נצטרך להעתיק את קבצי ה-html
+            והתמונות לשרת אינטרנט ושם הם יהיו
+            במיקום אחר בכונן הקשיח. במידה ונשתמש בנתיב מוחלט, נאלץ לשנות את ההפניות לתמונות השונות, בניגוד לנתיב יחסי שאינו דורש שום שינוי.
+            <h2>הוספת תמונה קיימת באינטרנט </h2>
+            ניתן להוסיף לאתר שלנו תמונה ללא צורך בשמירה פיזית של התמונה בשרת השומר את הדף שלנו .כל שעלינו
+            לעשות הוא להוסיף הפניה למיקום המדויק שבו נמצאת התמונה ובעת הצורך ידע הדפדפן לאתר את התמונה ולשתול אותה בדף.
+            <br />
+            <b>יתרונות:</b> אין צורך בבזבוז מקום בשרת והניהול פשוט.
+            <br />
+            <b>חסרונות: </b>אפשרות הפרה של זכויות יוצרים, תלות במנהל האתר שבו נמצאת התמונה, כל שינוי שם יגרום לבעיה.
+            כמו כן ישנה בעיית זמן ההורדה. הדפדפן של הלקוח צריך לאתר וליצור קשר גם עם השרת בו נמצאת התמונה.
+            <br />
+            <br />
+            מבנה הפקודה הינו פשוט:
+            <p class="eng">&lt img src ="כתובת התמונה באינטרנט " /&gt </p>
+            ניתן למצוא תמונות רבות במנועי חיפוש שונים.
+            <br />
+            <a href="http//images.google.com" onclick="window.open('http://images.google.com')">http://images.google.com</a>
+            הוא מנוע חיפוש מוכר ונרחב לחיפוש תמונות בנושאים רבים.
+        </div>
+
+    </script>
+
+
+    <script id="t_5_4" type="text/template">
+        <div>
+            ניתן להגדיר תמונה כרקע לדף .במקרה בו התמונה קטנה מגודל הדף היא תכפיל את עצמה מספר פעמים עד
+            שתמלא את כל הדף, אם התמונה גדולה מדי לגודל האלמנט היא תיחתך.
+            <p class="eng">&lt body style="background-image:url('myCat.jpg')"&gt </p>
+            במידה ולא מעוניינים שהתמונה תשכפל את עצמה ניתן להוסיף את התכונה הבאה:
+            <p class="eng">background-repeat:no-repeat;</p>
+        </div>
+
+    </script>
+
+
+    <script id="t_5_5" type="text/template">
+        <div>
+            ניתן ליצור לחצן טקסט לקישור, כמו כן ניתן ליצור לחצן תמונה. בעת הלחיצה על התמונה יעבור הגולש אל כתובת היעד .
+            <br />
+            <br />
+            על מנת ליצור לחצן תמונה נמקם פקודת תמונה בתוך פקודת הקישור, במקום הטקסט:
+            <p class="eng">&lt a href="http://www.johnbryce.co.il"&gt&lt img src="face.gif"&gt&lt /a&gt </p>
+            הפעם תראה התמונה על המסך ובעת לחיצה עליה אכן יגיע הגולש לאתר של ג'ון ברייס.
+        </div>
+    </script>
+
+
+    <script id="t_5_6" type="text/template">
+        <div>
+            <table border="1">
+                <tr>
+                    <td><b>התכונה </b></td>
+                    <td><b>אופן השימוש:</b></td>
+                </tr>
+
+                <tr>
+                    <td><b> "טקסט אלטרנטיבי"=alt </b></td>
+                    <td>טקסט אלטרנטיבי אשר יוצג עד שתבוא התמונה ובעת מעבר העכבר מעל התמונה. </td>
+                </tr>
+
+                <tr>
+                    <td><b>lowsrc="pic.gif"  </b></td>
+                    <td>תמונה באיכות נמוכה אשר תוצג עד לטעינת התמונה שבשדה SRC. </td>
+                </tr>
+            </table>
+        </div>
+
+    </script>
+
+
+    <script id="t_5_7" type="text/template">
+        <div>
+            בימינו, מאוד מקובל להכניס דברים נוספים לעמוד כמו סרטוני וידאו או סרטוני פלאש.
+            <br />
+            ניתן לבצע הכנסה של אובייקט עם הפקודה embed.
+            <br />
+            השימוש בפקודת embed:
+            <p class="eng">
+                &lt embed src="book1.xls"&gt
+                <br />
+                &lt embed src="vid1.avi"&gt
+                <br />
+                &lt embed src="bomba.swf"&gt
+            </p>
+            להלן דוגמא לפקודת embed מלאה:
+            <div class="ex" id="ex12"></div>
+            באמצעות תגית זו ניתן להטביע בגוף מסמך ה - html, בין היתר:
+            <br />
+            סרטי AVI, קבצי קול WAV, תכני "פלאש "SWF, גליונות "אקסל ,"“PowerPoint”, מסמכי "וורד", ועוד..
+            <br />
+            <br />
+            המשתמש חייב להיות מצויד בתוכנה/תוסף מתאים להצגת סוג הקובץ המוטבע, אולם כיום
+            רוב הדפדפנים יסייעו למשתמש בהורדת התוסף המתאים (במידה ולא מותקן על המחשב).
+            <br />
+            <br />
+            התכונות שניתן להוסיף לתגית זו יכולות להשתנות בהתאם לאובייקט אותו אנחנו מטביעים בעמוד. יש להיוועץ
+            בחברה שאחראית על הטכנולוגיה שאתם משלבים על מנת לקבל מידע על תכונות נוספות (לדוגמא: סרטוני flash הם של חברת
+            .)adobe/macromedia
+            <br />
+            <br />
+            הנה כמה תכונות משותפות להרבה אובייקטים:
+            <table border="1">
+                <tr>
+                    <td><b>height=n </b></td>
+                    <td>גובה האובייקט המוצג </td>
+                </tr>
+
+                <tr>
+                    <td><b>width =n</b></td>
+                    <td>רוחב האובייקט המוצג </td>
+                </tr>
+
+                <tr>
+                    <td><b>autostart=yes </b></td>
+                    <td>הפעלה אוטומטית של הקובץ עם עליית הדף.  </td>
+                </tr>
+            </table>
+            <br />
+            דרך נוספת היא באמצעות תגית <b>object</b>.
+            <br />
+            . יש לציין כי זו תגית של חברת מיקרוסופט לכן לא עובדת במערכות שאינן windows.
+            <br />
+            <br />
+            להלן דוגמא לפקודת  object:
+            <div class="ex" id="ex13"></div>
+            התגית עובדת בצורה דומה. אלא שהיא מפרידה בין התכונות ע"י שימוש בתגיות פנימיות שנקראות Param.
+            <ul>
+                <li>classid  – מספר סידורי קבוע לטכנולוגיות במערכות Windows. המספר המצורף הוא המספר שמייצג סרטוני flash במערכות Windows.</li>
+                <li>width  – רוחב האובייקט</li>
+                <li>height  – גובה האובייקט </li>
+                <li>
+                    param  – הגדרת פרמטר, שמו הוא movie והערך שלו הוא כתובת באתר
+                    .youtube.com
+                </li>
+            </ul>
+            <br />
+            התגית object מכילה מנגנון מניעה למערכות שאינן מכירות בה. ניתן להכניס טקסט אחרי תגיות ה-
+            Param אבל לפני תגית הסגירה של &lt /object&gt. טקסט זה יוצג למסך רק במערכות שלא מכירות את התגית או במקרה של כשלון בתצוגה של האובייקט.
+            אם האובייקט זוהה והוצג אז הטקסט לא יוצג על המסך.
+            <br />
+            <br />
+            הנה מבנה פופולרי שמשלב בין 2 הטכנולוגיות ונהנה מ-2 העולמות.
+            <div class="ex" id="ex14"></div>
+            בצורה כזו הדפדפן ינסה להציג את האובייקט object, אם יכשל יעבור לתגית embed שהיא יותר ותיקה ורוב הדפדפנים מכירים אותה.
+            <br />
+            <br />
+            <b>טיפ :</b> הרבה אתרים מציעים היום את האפשרות להטביע את האובייקטים שהם מציעים
+            (סרטים או משחקים) אצלכם באתר. חפשו את המילים:
+            “embed this object” אצלם, לרוב הם יציעו לכם את הקוד המלא כך שכל שנותר לעשות הוא copy and paste אליכם לעמוד.
+
+        </div>
+    </script>
+
+    <script id="t_5_8" type="text/template">
+        <center>
+            <h2>הוספת תמונות תגית</h2>
+            <div onclick="window.open('https://www.youtube.com/watch?v=kK72IBcpf7s&index=5&list=PLdZoWGdVe4Btc-Wm1YTiTgvIJqLbziHto')">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kK72IBcpf7s" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
+            </div>
+        </center>
+    </script>
+
+    <script id="t_6_1" type="text/template">
+        <div>
+            באמצעות פקודותHTML  ניתן ליצור רשימות, כאשר הרשימות מתחלקות לשני סוגים:
+            <br />
+            רשימות ממסופרות אוטומטית ורשימות עם תבליטים.
+            <br />
+            היתרון הוא שגלישת הטקסט מסודרת סביב התבליט או המספר בלי צורך לדאוג לכניסות הטקסט.
+            <br />
+            <br />
+            ניתן ליצור איזור של רשימה ממוספרת עם התגית ordered list ol.
+            <br />
+            <br />
+            בכדי לציין על איבר ברשימה, נכניס תגיות list item li לתוך האיזור שהוגדר ולפי כמות האיברים ברשימה.
+            <div class="ex" id="ex15"></div>
+            <br />
+            באופן דומה ניתן לקבל רשימה של תבליטים (bullets) ע"י החלפת התגית ol בתגית
+            .unordered list
+            ul
+            <div class="ex" id="ex16"></div>
+            <br />
+            כעת ניתן לשלב בין השניים, רק לזכור כי אסור לסגור איזור אחד לפני שסיימנו את השני שנמצא בתוכו.  (חוק קינון התגיות) הקוד:
+            <div class="ex" id="ex17"></div>
+            ניתן לשנות את סגנון התבליט או המספר באמצעות התכונה style="list-style: value" של CSS.
+            <ol>
+                <li>
+                    סגנונות תבליט:
+                    <ul>
+                        <li style="list-style: circle">ocircle </li>
+                        <li style="list-style: disc">disc </li>
+                        <li style="list-style: square">square </li>
+                    </ul>
+                </li>
+                <li>
+                    סגנונות מספור:
+                    <ol>
+                        <li style="list-style: decimal">decimal </li>
+                        <li style="list-style: lower-roman">lower-roman </li>
+                        <li style="list-style: lower-alpha">lower-alpha </li>
+                        <li style="list-style: upper-alpha">upper-alpha</li>
+                    </ol>
+                </li>
+                <li>none – הצגת הפריטים ללא סגנון מספור או תבליט. </li>
+            </ol>
+            <br />
+            רשימה מלאה של סגנונות המספור והתנסות מיידית בהם ניתן לבצע באמצעות הדף הבא:
+            <br />
+            <a href="http//w3schools.com/cssref/playit.asp?filename=playcss_ol_list-style-type" onclick="window.open('http://w3schools.com/cssref/playit.asp?filename=playcss_ol_list-style-type')">http://w3schools.com/cssref/playit.asp?filename=playcss_ol_list-style-type </a>
+
+        </div>
+    </script>
+
+
+    <script id="t_6_2" type="text/template">
+        <div>
+            התגיות dl, dd  ו-  dt משמשות בכדי ליצור רשימה של הגדרות.
+            <br />
+            התגיות dl, dd  ו-  dt משמשות בכדי ליצור רשימה של הגדרות.
+            למעשה, התגית (dl (definition list מכריזה על רשימת הגדרות חדשה ,dt תכריז על המונח עצמו ו-dd
+            מכילה בתוכה את תוכן ההגדרה.
+            <div class="ex" id="ex18"></div>
+        </div>
+    </script>
+
+
+    <script id="t_6_3" type="text/template">
+        <center>
+            <h2>li ul ol הכנת רשימה</h2>
+            <div onclick="window.open('https://www.youtube.com/watch?v=p4qCoMeMU1c&index=6&list=PLdZoWGdVe4Btc-Wm1YTiTgvIJqLbziHto')">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/p4qCoMeMU1c" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
+            </div>
+        </center>
+    </script>
+
+    <script id="t_7_1" type="text/template">
+        <div>
+            טבלאות מאפשרות גמישות ודיוק בתצוגה. בעזרת טבלאות נוכל ליצור עמודות
+            ותאים בהם נציב טקסט ותמונות. בניגוד לטבלאות רגילות אשר מחולקות לשורות ולעמודות ,טבלאות ב HTML -
+            מחולקות לשורות והשורות עצמן מחולקות לתאים.
+            <br />
+            <br />
+            &lt table&gt -  מכולת הטבלה כולה
+            <br />
+            &lt tr&gt	 מכולת השורה
+            <br />
+            &lt td&gt	 מכולת התא הבודד
+            <br />
+            <br />
+            ניתן להשתמש בתגית &lt th&gt במקום &lt td&gt, אשר תיצור תא בטבלה עם טקסט מודגש וממורכז .
+            מיועד בד"כ ליצירת שורה עם כותרות עמודות בראש הטבלה.
+            <br />
+            <br />
+            בתוך תא בטבלה ניתן להכיל כל סוג של מידע החל מטקסט, קישורים ועד רשימות ואפילו טבלאות נוספות.
+            <br />
+            <br />
+            מומלץ להשתמש בטבלאות,
+            לדיוק במיקום בו מוצג המידע. ניתן ליצור טבלאות שקופות (ללא גבול) ,בהן נציג מידע בצורה מסודרת.
+            פריסה באמצעות טבלאות נחשבת למיושנת (מקובל להשתמש בתגיות <b>div</b> מעוצבות ב-CSS  על-מנת ליצור פריסה של האלמנטים בדף), בשל הסיבות הבאות:
+            <ol>
+                <li>הטבלה מערבת מידע הצגתי עם התוכן .</li>
+                <li>
+                    משקל הקבצים של דפי האתר יהיה גדולים שלא לצורך משום שהמשתמשים
+                    חייבים להוריד את המידע ההצגתי לכל דף בו מבקרים (טעינה איטית יותר של דפי האתר).
+                </li>
+                <li>גורם לתוספת עבודה ועלות עבור עיצוב מחודש של אתרים קיימים. </li>
+                <li>מקשה ביותר (ומייקר) על תחזוקת עיצוב עקבי באתר. </li>
+                <li>דפים מבוססי טבלאות מקשים על הגישה לאינטרנט למשתמשים עם מוגבלויות ולגולשים באמצעות טלפונים ניידים ומכשירי כף-יד. </li>
+            </ol>
+            לכן, שימוש נכון בטבלאות יהיה לא לצרכי פריסה אלא על-מנת להציג טבלה לצורכי השוואה ,פירוט וכו.'
+            <br />
+            דוגמא:
+            <div class="ex" id="ex19"></div>
+            <b>כותרת טבלה </b>
+            ניתן לתת כותרת לטבלה באמצעות תגית &lt caption&gt אותה נכתוב כתגית ראשונה בתוך המכולה
+            &lt table&gt. הכותרת תופיע מעל הטבלה (באמצע). כותרת זו יכולה להכיל טקסט, קישור, תמונה וכו.'
+            <p class="eng">
+                &lt table&gt
+                <br />
+                &nbsp &nbsp &nbsp &nbsp &lt caption&gt כותרת הטבלה&lt /caption&gt
+                <br />
+                &nbsp &nbsp &nbsp &nbsp שאר פקודות הטבלה
+                <br />
+                &lt /table&gt
+            </p>
+            <b>תאי כותרת </b>
+            <br />
+            לתאים המרכיבים את כותרת הטבלה ניתן להשתמש בתגיות <b>th</b> במקום td. התוצאה היא תאים שהטקסט בהם ממורכז ומודגש.
+            <br />
+            <br />
+            <b>רוחב טבלה </b>
+            <br />
+            ניתן לקבוע את רוחב וגובה הטבלה לפי אחוז מהמסך או על פי מספר פיקסלים
+            <p class="eng">&lt table width= “50%”&gt </p>
+            שימו לב ששימוש באחוזים עבור height לא עובד ברוב הדפדפנים כיוון שמקובל לחשוב על הגובה כדבר בלתי נגמר בעמודי אינטרנט. לעומת זאת,
+            הרוחב הוא מוגבל כיוון שלא מקובל לקבל גלילה צידית.
+            <br />
+            <br />
+            <b>מרווח בין תאים  </b>
+            <br />
+            ניתן לקבוע את המרחק בין התאים על ידי הוספת הפקודה <b>CellSpacing</b> בתוך תגית ה- table.
+            <br />
+            דוגמא:
+            <br />
+            אם ברצוננו ליצור טבלה עם מרווח בין תא לתא בגודל 2 פיקסלים נקליד את התגית הבאה:
+            <p class="eng">&lt table cellspacing=”2”&gt </p>
+            הפקודה <b>CellPadding</b> קובעת את המרווח בין תוכן התא לגבולותיו .
+            <br />
+            דוגמא:
+            <br />
+            אם ברצוננו במרווח של 4 פיקסלים נקליד:
+            <p class="eng">&lt table cellpadding=”4”&gt </p>
+            <h2>טבלאות לא סימטריות </h2>
+            פקודות rowspan ו- colspan מאפשרות לנו ליצור טבלאות לא סימטריות.
+            <br />
+            RowSpan: מספר השורות שיהוו את גודל התא (התא "נמתח" על מספר שורות).
+            <br />
+            דוגמא:
+            <br />
+            אם ברצוני ליצור תא בעל אורך של  2 שורות יש להקליד:
+            <p class="eng">&lt td rowspan =”2”&gt </p>
+            <br />
+            ColSpan: מספר העמודות שיהוו את גודל התא (התא "נמתח" על מספר עמודות/ תאים).
+            <br />
+            דוגמא:
+            <br />
+            אם ברצוני ליצור תא בעל רוחב של 2 עמודות יש להקליד:
+            <p class="eng">&lt td colspan =”2”&gt </p>
+            <br />
+            דוגמאות נוספות:
+            <br />
+            בכדי ליצור את הטבלה הבאה:
+            <div class="ex" id="ex20"></div>
+        </div>
+    </script>
+
+
+
+
+
+    <script id="t_8_1" type="text/template">
+        <div>
+            טפסים משמשים לצרכים שונים באינטרנט: לחיפוש, לרישום, להזנת מידע, לבחירה ועוד.
+            <br />
+            טופס פשוט שולח את תוצאותיו בדואר אלקטרוני לכתובת המצוינת בו. טופס מורכב יותר דורש עיבוד של המידע הנשלח מהמשתמש
+            . עיבוד זה יכול להתרחש בדפדפן עצמו (בעזרת תרחישי JavaScript, למשל) או בשרת האינטרנט של האתר.
+            על השרת צריכה להיות תוכנית היודעת לזהות את הנתונים הנשלחים מהטופס
+            ולבצע את העיבוד הנדרש .
+            <br />
+            עיבוד הנתונים בשרת נעשה באמצעות טכנולוגיה לתכנות בצד השרת כמו: PHP, JSP ,ASP.NET וכד.'
+            <br />
+            <br />
+            כתיבת צד המשתמש של הטופס אינה מסובכת ודורשת הכרת מספר פקודות HTML ייחודיות.
+            <br />
+            <br />
+            <b>טופס</b> מתחיל בפקודה &lt form&gt ונסגר בפקודה &lt /form&gt
+            <p class="eng">
+                &lt form action="http://www.demo.com" method="post"&gt
+                <br />
+                …
+                <br />
+                …
+                <br />
+                &lt / form&gt
+            </p>
+            <br />
+            <b>Action - </b>הכתובת אליה ישלח הטופס. בד"כ שם של סקריפט בשרת.  אם נשאיר ריק אז הוא ישלח את המידע לאותו
+            עמוד עצמו. קצת חסר טעם אבל בקורס זה יעזור לנו להבין מה התוכן שנשלח כיוון שאין לנו צד שרת לעבוד מולו.
+            <b>Method - </b>צורת שליחת המידע. 2 אפשרויות שליחה:
+            <ul>
+                <li>
+                    Get  – נשלח בשורת הכתובת (url). מוגבל ל- 255 תוים. מגבלה נוספת היא שמה שנשלח יהיה גלוי גם למי שאינו אשף בטחון באינטרנט.
+                    טוב למידע מועט ומהיר. שימו לב מה קורה לשורת הכתובת של Google כשאתם מחפשים מידע.
+                </li>
+                <li>
+                    Post  – נשלח כקובץ מאחורי הקלעים. מכיל מידע אינסופי. טוב למידע גדול או סודי. זהו אינו הבטחה לבטיחות של נושאים כמו
+                    סיסמא או כרטיסי אשראי, אלא רק דרך לשלוח את זה בצורה לא גלויה לעין.
+                </li>
+            </ul>
+            העדיפו כרגע לעבוד בשיטת get כדי שתוכלו לראות את התוצאות של הקוד שלכם באופן מיידי.
+            <h2>טופס לשליחה בדואר </h2>
+            <p class="eng">&lt form action="mailto:alon@johnbryce.co.il" method="post" enctype="text/plain"&gt </p>
+            פקודת mailto בתוך form מגדירה את השליחה בדואר ואת הכתובת.
+            <br />
+            התוספת (enctype (Encryption Type חשובה מאוד בטפסים הנשלחים בדואר אלקטרוני, כי בלעדיה הנתונים מגיעים בצורה קשה לקריאה.
+            <h2>הטופס מורכב ממספר שדות (פקדים) מסוגים שונים לפי הצורך: </h2>
+            שורת טקסט, אזור טקסט, תיבת רשימה, סיסמא, תיבת סימון, כפתור רדיו, שליחה ואיפוס.
+            <br />
+            <br />
+            ישנן מספר תכונות המשותפות לכל הפקדים בטופס. נזכיר תכונות אלו כאן:
+            <br />
+            <b>Name – </b>מציינת את שם השדה (פקד) תכונה זו תשלח עם הטופס .חובה לציין תכונה זו ע"מ שנדע מאיזה שדה הגיע המידע.
+            אם תכונה זו לא נמצאת בתוך התגית המדוברת, המידע של אותה תגית לא יישלח.
+            <br />
+            <br />
+            <b>Title - </b>מגדירה ToolTip לפקד (חלון קטן עם מידע המוצג כאשר עוצרים עם העכבר מעל לפקד).
+            <br />
+            רצוי מאד להגדיר תכונה זו בכדי שיוצג הסבר למשתמש המתאר איזה מידע עליו להזין לפקד.
+            <br />
+            <br />
+            <b>Tabindex – </b>מציינת את הסדר בו נעבור בין הפקדים באמצעות לחצן Tab במקלדת .
+            <br />
+            את הסדר נציין במספרים ובכל לחיצה על Tab לעבור לפקד עם המספר הבא. מומלץ להגדיר את תכונה זו במקרה בו נרצה שהמשתמש יעבור בין
+            הפקדים לא לפי הסדר בו הם כתובים בקוד.
+
+
+        </div>
+
+    </script>
+
+
+    <script id="t_8_2" type="text/template">
+        <div>
+            פקדי הטופס מחולקים ל-3 קבוצות:
+            <ol>
+                <li>פקדים לקליטת טקסט. </li>
+                <li>פקדי בחירה. </li>
+                <li>כפתורים. </li>
+            </ol>
+        </div>
+    </script>
+
+
+    <script id="t_8_3" type="text/template">
+        <div>
+            <h2>תיבת טקסט -Text box </h2>
+            <p class="eng">&lt input type="text" /&gt  </p>
+            דוגמא:
+            <div class="ex" id="ex21"></div>
+            תיבה בעלת שורה אחת בתוכה המשתמש יכול להכניס טקסט.
+            <br />
+            שימוש: קבלת טקסט פשוט מהמשתמש.
+            <br />
+            בשליחת הטופס: ישלח הטקסט הכתוב בתיבה.
+            <br />
+            <br />
+            <b>תכונות: </b>
+            <table border="1">
+                <tr>
+                    <td><b>value </b></td>
+                    <td>ערך השדה (טקסט ברירת המחדל) </td>
+                </tr>
+
+                <tr>
+                    <td><b>size </b></td>
+                    <td>אורך מוצג של השדה (בתוים) </td>
+                </tr>
+
+                <tr>
+                    <td><b>maxlength  </b></td>
+                    <td>מספר תווים מקסימאלי אותו נוכל להקליד בשדה </td>
+                </tr>
+
+                <tr>
+                    <td><b>"disabled="disabled  </b></td>
+                    <td>השדה מוצג אך בצורה בהירה ולא ניתן לגשת אליו </td>
+                </tr>
+
+                <tr>
+                    <td><b>"readonly="readonly </b></td>
+                    <td>ערך לקריאה בלבד </td>
+                </tr>
+            </table>
+            <h2>Password box- תיבת סיסמה</h2>
+            <p class="eng">&lt input type="password" /&gt  </p>
+            דוגמא:
+            <div class="ex" id="ex22"></div>
+            תיבה  אחת בתוכה המשתמש יכול להכניס טקסט.
+            <br />
+            שימוש: קבלת סיסמא מהמשתמש.
+            <br />
+            בשליחת הטופס: ישלח הטקסט הכתוב בתיבה.
+            <br />
+            <br />
+            <b>תכונות: </b>
+            <table border="1">
+                <tr>
+                    <td><b>size </b></td>
+                    <td>אורך מוצג של השדה (בתוים) </td>
+                </tr>
+
+                <tr>
+                    <td><b>maxlength </b></td>
+                    <td>מספר תווים מקסימאלי אותו נוכל להקליד בשדה </td>
+                </tr>
+            </table>
+            <h2>תיבת אזור טקסט - Text area </h2>
+            <p class="eng">&lt textarea&gt&lt /textarea&gt </p>
+            דוגמא:
+            <div class="ex" id="ex23"></div>
+            תיבה אשר אינה מוגבלת בשורות בתוכה המשתמש
+            יכול להכניס טקסט.
+            במידה והטקסט ארוך מגודל הפקד נוצר פס גלילה באופן אוטומטי וניתן להמשיך ולכתוב בתוך הפקד.
+            ניתן לרדת שורה באמצעות enter. התוכן שנרשום בין התגיות יופיע כערך ברירת מחדל בפקד.
+            <br />
+            <br />
+            שימוש: קליטת טקסט ארוך מהמשתמש.
+            <br />
+            בשליחת הטופס: ישלח הטקסט הכתוב בתיבה.
+            <br />
+            <br />
+            <b>תכונות: </b>
+            <table border="1">
+                <tr>
+                    <td><b>cols  </b></td>
+                    <td>מספר הטורים - רוחב התיבה (ברירת מחדל 20). </td>
+                </tr>
+
+                <tr>
+                    <td><b>rows  </b></td>
+                    <td>מספר השורות - גובה התיבה (ברירת מחדל 1). </td>
+                </tr>
+
+                <tr>
+                    <td><b>disabled="disabled"  </b></td>
+                    <td>השדה מוצג אך בצורה בהירה ולא ניתן לגשת אליו.  </td>
+                </tr>
+
+                <tr>
+                    <td><b>readonly="readonly" </b></td>
+                    <td>ערך לקריאה בלבד </td>
+                </tr>
+            </table>
+            <h2>Hidden box -  תיבה נסתרת </h2>
+            <p class="eng">&ltinput type="hidden" /&gt </p>
+            דוגמא:
+            <div class="ex" id="ex24"></div>
+            תיבה אשר אינה נראית למשתמש ומכילה ערך טקסטואלי קבוע.
+            <br />
+            <br />
+            שימוש: אם ברצוננו לשלוח עם כל טופס ,ערך נוסף קבוע ללא קשר לנתונים שהמשתמש יזין .בשליחת הטופס: ישלח הערך הקבוע.
+            <br />
+            עושים שימוש רב בתגית זו כשעובדים עם צד שרת – שם ניתן להכניס מידע שאינו נוגע למשתמש ואינו מודע אליו אבל הופך את חווית הגלישה לנעימה יותר.
+            <br />
+            <br />
+            <b>תכונות: </b>
+            <table border="1">
+                <tr>
+                    <td><b>value  </b></td>
+                    <td>הערך הקבוע שבתוך השדה </td>
+                </tr>
+            </table>
+
+        </div>
+    </script>
+
+    <script id="t_8_4" type="text/template">
+        <div>
+            <h2>Check box – תיבת סימון</h2>
+            <p class="eng">&lt input type="checkbox"  /&gt  </p>
+            דוגמא:
+            <div class="ex" id="ex25"></div>
+            תיבה בעלת 2 אפשרות מסומנת/לא מסומנת הסימון הוא בצורת V (וי).
+            <br />
+            שימוש: במידה ונרצה לתת למשתמש לבחור ערך בוליאני (כן/לא).
+            <br />
+            בשליחת הטופס: במידה וסומן ישלח הערך (value) במידה ולא, לא ישלח כלום.
+            <br />
+            <br />
+            <b>תכונות: </b>
+            <table border="1">
+                <tr>
+                    <td><b>value </b></td>
+                    <td>ערך השדה שישלח, <b>חובה לציין.</b> </td>
+                </tr>
+
+                <tr>
+                    <td><b>checked="checked"  </b></td>
+                    <td>התיבה תהיה מסומנת כברירת מחדל. </td>
+                </tr>
+
+                <tr>
+                    <td><b>disabled="disabled"   </b></td>
+                    <td>התיבה מוצגת אך בצורה בהירה ולא ניתן לגשת אליה.  </td>
+                </tr>
+            </table>
+
+            <h2>קבוצת כפתורי רדיו - Radio buttons  </h2>
+            <p class="eng">&lt input type="Radio"/&gt  </p>
+            דוגמא:
+            <div class="ex" id="ex26"></div>
+            כפתור בעל 2 אפשרות מסומן/לא מסומן הסימון הוא בצורת עיגול.
+            לא ניתן לבטל את הסימון בכפתור זה, אלא באמצעות סימון כפתור אחר מאותה קבוצה. כפתור זה חייב להיות חלק מקבוצה של 2 כפתורים לפחות,
+            אחרת הוא לא שימושי. ע"מ להגדיר קבוצה של כפתורים יש לתת לכולם את אותו name. בהגדרת קבוצה מומלץ להשתמש בתגית
+            <br />
+            &lt fieldset&gt עליה נרחיב בהמשך.
+            <br />
+            שימוש:במידה ונרצה לתת למשתמש לבחור אפשרות אחת בלבד מתוך כמה אפשרויות קבועות.
+            בשליחת הטופס: ישלח רק הערך של הכפתור הנבחר (מתוך הקבוצה) במידה ולא נבחר אף כפתור לא ישלח כלום.
+
+            <br />
+            <br />
+            <b>תכונות: </b>
+            <table border="1">
+                <tr>
+                    <td><b>value   </b></td>
+                    <td>ערך השדה שישלח, <b>חובה לציין.</b> </td>
+                </tr>
+
+                <tr>
+                    <td><b>checked="checked"  </b></td>
+                    <td>הלחצן יהיה מסומן כברירת מחדל (ניתן להגדיר רק אחד כזה בקבוצה). </td>
+                </tr>
+
+                <tr>
+                    <td><b>disabled="disabled"   </b></td>
+                    <td>התיבה מוצגת אך בצורה בהירה ולא ניתן לגשת אליה.  </td>
+                </tr>
+            </table>
+            <h2>תגית&lt fieldset&gt  לחלוקת הטופס לחלקים ויזואליים </h2>
+            ניתן להכיל בתוך פקודה זו מספר פקדים בעלי זיקה משותפת ובכך לחלק את הטופס לחלקים ויזואליים.
+            פקודה זו גורמת ליצירת מסגרת מסביב לפקדים המוכלים בתוכה .השימוש בפקודה זו מתבטא בצורה ויזואלית בלבד
+            ואינו משפיע על נתוני הטופס. אחד השימושים הנפוצים בפקודה זו הוא להקיף קבוצת כפתורי רדיו.
+            <br />
+            <br />
+            ניתן להוסיף מיד אחרי פקודה זו את הפקודה &lt legend&gt הגורמת להוספת כותרת למסגרת. כותרת זו תתאר את קבוצת הפקדים המוכלים בתוכה.
+            <br />
+            <br />
+            דוגמא לשימוש בתגית &lt fieldset&gt, כפי שמוצג בטופס שלעיל (לבחירת מין):
+            <div class="ex" id="ex27"></div>
+
+            <h2>Drop down list - תיבת רשימה נפתחת </h2>
+            <p class="eng">
+                &lt select&gt
+                <br />
+                &nbsp &nbsp &nbsp  &lt option&gt&lt/option&gt
+                <br />
+                &nbsp &nbsp &nbsp &lt option&gt&lt/option&gt
+                <br />
+                &nbsp &nbsp &nbsp &lt option&gt&lt/option&gt
+                <br />
+                &lt /select&gt
+            </p>
+            דוגמא:
+            <div class="ex" id="ex28"></div>
+            תיבה לבחירת אפשרות אחת או יותר מתוך מספר אפשרויות קבועות. כאשר הפקודה &lt select&gt&lt/select&gt
+            מייצגת את התיבה עצמה ובתוכה נגדיר את אפשרויות הבחירה באמצעות &lt option&gt&lt/option&gt. כאשר כל option הוא אפשרות אחת. ניתן
+            לבחור רק אפשרות אחת אלא אם נגדיר אחרת. ע"מ לבחור יותר מאפשרות אחת (במידה והוגדרה היכולת לבצע זאת) יש לבצע זאת באמצעות ctrl/shift במקלדת.
+
+            <br />
+            שימוש: כאשר ברצוננו לתת למשתמש אפשרות לבחור מתוך מספר אפשרויות קבועות.
+            <br />
+            בשליחת הטופס: ישלחו הערכים (value) של כל האפשרויות שנבחרו.
+            <br />
+            <br />
+            <b>תכונות ל - select: </b>
+            <table border="1">
+                <tr>
+                    <td><b>size   </b></td>
+                    <td>מספר האפשרויות הנראות בחלון בפעם אחת.  </td>
+                </tr>
+
+                <tr>
+                    <td><b>disabled="disabled"  </b></td>
+                    <td>השדה מוצג אך בצורה בהירה ולא ניתן לגשת אליו. </td>
+                </tr>
+
+                <tr>
+                    <td><b>multiple="multiple" </b></td>
+                    <td>מאפשר לבחור מספר אפשרויות. </td>
+                </tr>
+            </table>
+
+            <br />
+            <b>תכונות ל -option: </b>
+            <table border="1">
+                <tr>
+                    <td><b>value    </b></td>
+                    <td>ערך השדה שישלח, במידה ולא צוין ישלח התוכן.   </td>
+                </tr>
+
+                <tr>
+                    <td><b>selected="selected"</b></td>
+                    <td>האפשרות/יות מסומנ/ות כבר עם הופעת הטופס.  </td>
+                </tr>
+            </table>
+        </div>
+
+    </script>
+
+    <script id="t_8_5" type="text/template">
+        <div>
+            <h2>Button – לחצן</h2>
+            <p class="eng">&lt input type="button"/&gt  </p>
+            דוגמא:
+            <div class="ex" id="ex29"></div>
+            לחצן אשר אין לו תפקיד מוגדר. ע"מ שיהיה שימושי יש לכתוב תסריט
+            (script) שיבוצע כאשר נלחץ עליו, בשפת תסריט צד לקוח כמו JavaScript (נושא זה אינו חלק מחוברת זו).
+            <br />
+            שימוש: ביצוע פעולה כלשהי בהתאם לתסריט שנכתוב.
+            <br />
+            בשליחת הטופס: לא ישלח שום ערך מפקד זה.
+            <br />
+            <br />
+            <b>תכונות: </b>
+            <table border="1">
+                <tr>
+                    <td><b>value   </b></td>
+                    <td>הכיתוב שיופיע על הלחצן. </td>
+                </tr>
+            </table>
+
+            <h2>לחצן שליחת הנתונים -Submit   </h2>
+            <p class="eng">&lt input type="submit" /&gt  </p>
+            דוגמא:
+            <div class="ex" id="ex30"></div>
+            לחצן אשר בלחיצה עליו ישלחו נתוני הטופס, בהתאם לתכונות שהוגדרו בתגית  &lt form&gt
+            (לאן ישלח, סוג השליחה וכו).
+
+            <br />
+            שימוש: שליחת הטופס.
+            <br />
+            בשליחת הטופס: לא ישלח שום ערך מפקד זה.
+            <br />
+            <br />
+            <b>תכונות: </b>
+            <table border="1">
+                <tr>
+                    <td><b>value   </b></td>
+                    <td>הכיתוב שיופיע על הלחצן. </td>
+                </tr>
+            </table>
+
+            <h2>לחצן שליחת הנתונים –Image submit    </h2>
+            <p class="eng">&lt input type="image"  /&gt  </p>
+            דוגמא:
+            <p>&lt input type="image"  src="submit.jpg" /&gt  </p>
+            מבצע את אותה הפעולה כמו לחצן submit רק שעל הלחצן תופיע תמונה ולא כיתוב.
+            <br />
+            שימוש: שליחת הטופס.
+            <br />
+            בשליחת הטופס: לא ישלח שום ערך מפקד זה.
+            <br />
+            <br />
+            <b>תכונות: </b>
+            <table border="1">
+                <tr>
+                    <td><b>src    </b></td>
+                    <td>הנתיב של התמונה שתופיע על הלחצן.  </td>
+                </tr>
+            </table>
+
+            <h2>לחצן איפוס הטופס - Reset  </h2>
+            <p class="eng">&lt input type="reset" /&gt  </p>
+            דוגמא:
+            <div class="ex" id="ex31"></div>
+            לחצן אשר בלחיצה עליו יאופסו כל השדות בטופס לערכי ברירת המחדל שלהם.
+            <br />
+            שימוש: איפוס השדות בטופס לערכי ברירת מחדל.
+            <br />
+            בשליחת הטופס: לא ישלח שום ערך מפקד זה.
+            <br />
+            <br />
+            <b>תכונות: </b>
+            <table border="1">
+                <tr>
+                    <td><b>value      </b></td>
+                    <td>הכיתוב שיופיע על הלחצן.  </td>
+                </tr>
+            </table>
+
+            <h2>פקד להעלאת קובץ - File upload  </h2>
+            <p class="eng">&lt input type="file"  /&gt  </p>
+            דוגמא:
+            <div class="ex" id="ex32"></div>
+            פקד אשר מציג תיבת טקסט ולצידה לחצן "עיון" (Browse).
+            בלחיצה על הלחצן נפתחת תיבת דיאלוג סטנדרטית בה המשתמש יכול לבחור קובץ במחשב שלו.
+            לאחר אישור תיבת הדיאלוג שם הקובץ כולל הנתיב
+            יוצגו בתוך תיבת הטקסט. ע"מ לטפל בהעלאת הקובץ יש לכתוב קוד שיבצע זאת (נושא זה אינו חלק מחוברת זו).
+            <br />
+            שימוש: ביצוע של העלאת קובץ לאתר.
+            <br />
+            בשליחת הטופס: ישלח התוכן של תיבת הטקסט.
+            <br />
+            <br />
+            <b>תכונות: </b>
+            <table border="1">
+                <tr>
+                    <td><b>size       </b></td>
+                    <td>גודל תיבת הטקסט( בתווים)  </td>
+                </tr>
+            </table>
+
+        </div>
+
+    </script>
+
+    <script id="t_8_6" type="text/template">
+        <center>
+
+            <h2>טופס בסיסי</h2>
+            <div onclick="window.open('https://www.youtube.com/watch?v=30AUfyZaLHc&list=PLdZoWGdVe4Btc-Wm1YTiTgvIJqLbziHto&index=7')">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/30AUfyZaLHc" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
+            </div>
+
+            <h2>טופס מתקדם</h2>
+            <div onclick="window.open('https://www.youtube.com/watch?v=HiG-clXZHnA&index=8&list=PLdZoWGdVe4Btc-Wm1YTiTgvIJqLbziHto')">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HiG-clXZHnA" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
+            </div>
+
+        </center>
+    </script>
+
+
+    <script id="t_9_1" type="text/template">
+        <div>
+            פקודותMeta  הנן פקודות המשמשות להגדרות עמודי ה-HTML.
+            כשמן, תגיות המטה מדברות "על" העמוד, נותנות מידע נוסף למנועי חיפוש, מידע על כותב העמוד וכמה פקודות חביבות
+            כמו רענון הדף בסוף ספירה לאחור.
+            <br />
+            פקודות אלו ממוקמות בתוך כותרת העמוד, בתוך מכולת ה- head.
+        </div>
+    </script>
+
+
+    <script id="t_9_2" type="text/template">
+        <div>
+            פקודותMETA  משמשות את מנועי החיפוש כאשר הם סורקים את האתרים השונים לאיסוף מידע על האתר וריכוזו בבסיס הנתונים שלהם.
+            <br />
+            תאור האתר הוא שורת הטקסט אשר תופיע ליד ההפניה לאתר. מילות המפתח ישמשו לקטלוג האתר בבסיס הנתונים של מנוע החיפוש.
+            <p class="eng">
+                &lt meta name="description" content="האתר של מילולי תאור" /&gt
+                <br />
+                &lt meta name ="keywords" content ="בפסיקים מופרדות מפתח מילות" /&gt
+            </p>
+        </div>
+    </script>
+
+
+    <script id="t_9_3" type="text/template">
+        <div>
+            פקודת META  מיוחדת נוספת, מאפשרת מעבר אוטומטי של הדפדפן מדף ה-HTML שבו כלולה הפקודה לכתובת אחרת, לאחר השהיה ברת שליטה.
+            <p class="eng">
+                &lt meta http-equiv=”refresh” content="2;url=קובץ שם או כתובת" /&gt
+            </p>
+            <b>הסבר:</b>
+            <br />
+            2 - זמן ההשהיה בשניות.
+            <br />
+            url - כתובת היעד.
+            <br />
+            <br />
+            בין השימושים הנפוצים לשימוש בתגית זו, הצגת דף פתיחה גרפי אשר מפנה מיידית את המשתמש אל האתר עצמו .
+            <br />
+            או במקרה, שכתובת האתר שונתה, ניתן להעביר את המשתמשים אוטומטית אל האתר החדש.
+            כמו כן ניתן להשתמש בשיטה זו על מנת להקל על המשתמשים
+            בתהליכים של הורדת קבצים. כאשר דף הורדה מפנה מיידית לקובץ, יבוצע אוטומטית תהליך של הורדת קובץ
+            <br />
+            (נסה להוריד קובץ מהאתר של
+            <a href="http//www.tucows.co.il" onclick="window.open('http://www.tucows.co.il ')">http://www.tucows.co.il</a>
+            לדוגמא).
+            <br />
+            <br />
+            שימוש נוסף הוא refresh אוטמטי של אותו הדף מידי פעם. שימושי בעיקר באתרי חדשות כאשר רוצים שהדף
+            אצל המשתמש יציג כל הזמן את החדשות המעודכנות. במקרה זה אין צורך לכתוב את הכתובת אלא יש לכתוב זאת כך, כאשר ה content
+            מיצג כל כמה זמן בשניות הדף יתעדכן:
+            <p class="eng">&lt meta http-equiv="refresh" content="600" /&gt </p>
+        </div>
+    </script>
+
+
+    <script id="t_10_1" type="text/template">
+        <div>
+            <p>
+                HTML ממשיך להתפתח ולהשתכלל. להלן באמצע שנת 2010 גרסה 5 עדיין אינה חתומה ועדיין נדונה בעיקר
+                בהתאמתה ללקחות מדיה הזקוקים למידע כגון &lt alt&gt ו-&lt summery&gt.
+                <br />
+                <br />
+                כמה הנחות יסוד המשפיעות על ארכיטקטורת ואופן הפיתוח ב-WEB נכללות בגרסה זו ובתוכן:
+            </p>
+            <ul>
+                <li>השפה תתבסס בהגדרותיה הבסיסיות יותר על Document Object Model) DOM הלקוח בעיקר מעולם ה-XML) </li>
+                <li>שיפור ביכולות הלקוח לשמר ותחזק נתונים  (browsing context) </li>
+                <li>דרישות יותר קונקרטיות מהדפדפנים (פחות פקודות אבסטרקטיות) </li>
+                <li>מוחדל לניהול תכולת דף </li>
+                <li>שילוב נגישות כתגים ספציפיים במקום add‐on כגון alt </li>
+                <li>command-ו menu תוספת תגים</li>
+                <li>off‐line במצב cache ניהול</li>
+                <li>שליטה טובה ב-history ובנתוני ה-session </li>
+                <li>אפשרות לבצע בדיקת encoding בזמן אמת (sniffing) </li>
+                <li>(contentEditable & UndoManager)  UNDO -ניהול תוכן ותמיכה ב</li>
+                <li>Copy&Paste-ו Drag&Drop ארכיטקטורת</li>
+                <li>יכולות נוספות ל-iframe </li>
+            </ul>
+            <h2>יכולות תחביר חדשות </h2>
+            <ul>
+                <li>
+                    5 HTML משלב בין 4.* HTML ו - XHTML1 ולפיכך מנהג כשפת XML לכל דבר. עובדה זו מאפשרת לכלי פיתוח והצגה לדווח באופן מדוייק על טעויות.
+                    מסמך HTML ישתמש בפקודה  !DOCTYPE (הלקוחה מ-SGML) או ע"י  XML Schema (סדג) המצהירה על שם השפה עם אפשרות לציין ENCODING.
+                    <ul>
+                        <li>
+                            <b>דוגמא לשימוש ב - DOCTYPE </b>
+                            <div class="ex" id="ex33"></div>
+                        </li>
+                        <li>
+                            <b>דוגמא לשימוש ב - SCHEMA</b>
+                            <div class="ex" id="ex34"></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    ניתן לשלב את שפות SVG – XML (לשימוש בגרפיקה ווקטורית) ו-  MathML
+                    (להעברת ביטויים או לביצוע חישובים מתמטיים) בתוך תגי HTML. לדוגמא:
+                    <div class="ex" id="ex35"></div>
+                </li>
+                <li>
+                    <h2>רשימת תגים חדשים:</h2>
+
+                    <table border="1">
+                        <tr>
+                            <td><b>תג </b></td>
+                            <td><b>תיאור</b></td>
+                        </tr>
+
+                        <tr>
+                            <td><b>section</b></td>
+                            <td>מתאר חלק במסמך, יכול לשלב &lt h1&gt ליצירת head לחלק  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>article</b></td>
+                            <td>מייצג קישור לתכולת מסמך חיצוני (מאמר, בלוג וכד')  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>aside</b></td>
+                            <td>מייצג תכולת מסמך שיש לה קשר קל בלבד עם התוכן העיקרי  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>hgroup</b></td>
+                            <td>(&ltsection&gt) של חלק מסמך header-משמש כ</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>header</b></td>
+                            <td>מכיל תוכן הצגת ו\או כלי נביגציה עבור המסמך, מנהג כמו ראש המסמך  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>footer</b></td>
+                            <td>משמש כתחתית המסמך ומכיל בדר"כ מידע על זכויות יוצרים, כותב המסמך וכו'  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>nav</b></td>
+                            <td>מכיל קישור למקום אחר בדף (כמו עוגן)  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>figure</b></td>
+                            <td>מאחד מידע מדיה עם מידע נוסף רלוונטי  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>figcaption</b></td>
+                            <td>
+                                מכיל את המידע הנוסף עבור המדיה בתוך &lt figure&gt  לדוגמא:
+                                <p class="eng">
+                                    &lt figure&gt
+                                    <br />
+                                    &lt video src="ogg"&gt&lt /video&gt
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <b>
+                                    video
+                                    <br />
+                                    audio
+                                </b>
+                            </td>
+                            <td>תגים המסוגלים להחזיק תוכן מולטימדיה או קישור ל-source שונים אם מדובר בשילוב של סוגי מדיה שונים המשולבים יחד  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>embed</b></td>
+                            <td>לשילוב תוכן עבור plugin  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>mark</b></td>
+                            <td>
+                                מדגיש את התוכן. הרעיון הוא שההדגשה תהיה בהתאם לצורך
+                                הנוכחי של הצופה במסמך – ולא הדגשה מקורית שעיקרה עיצוב כמו שנעשה בתג &lt b&gt
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>progress</b></td>
+                            <td>מציג התקדמות של משימה, כמו למשל הורדה של תוכן או חישוב שנעשה מאחורי הקלעים  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>meter</b></td>
+                            <td>מאפשר להציג תוצאת חישוב ומדידה כגון צריכת CPU וכד'  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>time</b></td>
+                            <td>מאפשר להציג זמן ו\או שעה  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>canvas</b></td>
+                            <td>מאפשר להציג גרפיקה ולעדכן אותה באופן דינאמי. שימושי למשטחי משחקים וגראפים  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>command</b></td>
+                            <td>אפשרות למשתמש לבצע פעולה. ניתן להגדיר גם פעולה מסוג Checkbox ולה שני מצבים או פעולה מסוג ‐Radio לשם ריבוי מצבים  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>details</b></td>
+                            <td>מידע נוסף שניתן לצפות בו לפי דרישה  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>datalist</b></td>
+                            <td>
+                                מכיל רשימת נושאים תחת קטגוריה. ניתן להשתמש בו על מנת לייצר רשימות בטפסים:
+                                <div class="ex" id="ex36"></div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>keygen</b></td>
+                            <td>שליטה על שימוש ב-public key וב- private key לטובת הצפנה  </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>output</b></td>
+                            <td>מאפשר להציג תוכן שחושב ב-Java Script על המסך  </td>
+                        </tr>
+
+
+                    </table>
+                    <br />
+                </li>
+                <li>
+                    הוספת סוגים שונים ורצויים ל - &lt "?????"=input  type&gt, ולהלן הרשימה:
+                    <ul>
+                        <li>tel – מספרי טלפון </li>
+                        <li>email  </li>
+                        <li>datetime</li>
+                        <li>date</li>
+                        <li>month</li>
+                        <li>week</li>
+                        <li>time</li>
+                        <li>number</li>
+                        <li>range</li>
+                        <li>color</li>
+                    </ul>
+                    <br />
+                </li>
+                <li>
+                    מאפייני תגים נפוצים שהתווספו <b>לכל התגים</b>:
+                    <ul>
+                        <li>class</li>
+                        <li>dir</li>
+                        <li>id</li>
+                        <li>lang</li>
+                        <li>style</li>
+                        <li>tabindex – ניתן להסתמך על ערך זה בכדי לבחור ב -TAB להצגה</li>
+                        <li>title </li>
+                    </ul>
+                    <br />
+                </li>
+                <li>
+                    תגים שהשתנו
+                    <ul>
+                        <li>&lt a&gt - ללא שימוש ב-href, משמש כמחזיק מקום ללינק אותו ניתן לשתול באופן דינאמי בדף </li>
+                        <li>&lt hr&gt - ניתן להשתמש בתג זה גם ליצירת הפרדה בין פסקאות </li>
+                        <li>&lt menu&gt - שופר לשם תמיכה בתפריטים מורכבים </li>
+                    </ul>
+                    <br />
+                </li>
+                <li>
+                    HTMLDocument -  שינויים ב
+                    <table>
+                        <tr>
+                            <td><b>פונקציה  </b></td>
+                            <td><b>תיאור  </b></td>
+                        </tr>
+
+                        <tr>
+                            <td> getElementByClassName(className)</td>
+                            <td>טעינת תגים לפי שם class    </td>
+                        </tr>
+
+                        <tr>
+                            <td>  innerHTML</td>
+                            <td>זמינה כעת לא רק ב-HTMLElement    </td>
+                        </tr>
+
+                        <tr>
+                            <td>activateElement & hasFocus</td>
+                            <td>לשליטה ובקרה בפוקוס של הרכיבים  </td>
+                        </tr>
+
+                        <tr>
+                            <td>  getSelection</td>
+                            <td>מחזירה את הרכיבים שנבחרו   </td>
+                        </tr>
+
+                    </table>
+                    <br />
+                </li>
+                <li>
+                    HTMLElement – שינויים ב
+                    <table>
+                        <tr>
+                            <td><b>פונקציה  </b></td>
+                            <td><b>תיאור  </b></td>
+                        </tr>
+
+                        <tr>
+                            <td>  ()getElementByClassName, classList</td>
+                            <td>טעינת רכיבים לפי שם class. מחזירה אובייקטים יחודיים      </td>
+                        </tr>
+
+                        <tr>
+                            <td> ()has,()add,()remove,()toggle</td>
+                            <td>יכולות האובייקטים הייחודיים המוחזרים מחיפוש לפי class     </td>
+                        </tr>
+
+                        <tr>
+                            <td>  innerHTML</td>
+                            <td>תומכת כעת גם בפורמט XML    </td>
+                        </tr>
+
+                        <tr>
+                            <td> activateElement & hasFocus</td>
+                            <td>לשליטה ובקרה בפוקוס של הרכיבים     </td>
+                        </tr>
+
+                    </table>
+                </li>
+            </ul>
+        </div>
+    </script>
+
+    <script id="t_11_1" type="text/template">
+        <div>
+            מפת תמונה הינה תמונה רגילה המחולקת למספר אזורים, כאשר כל אזור הינו קישור למקום אחר.
+            כאשר נצביע עם העכבר על אזור כלשהו המוגדר כקישור,
+            ישתנה סמן העכבר לסימן של קישור, וכאשר נלחץ על אזור זה הלחיצה תבצע את אותה הפעולה שמבצעת לחיצה על קישור רגיל.
+            <br />
+            דוגמא לקוד HTML:
+            <p class="eng">
+                &lt img src="cat1.jpg" usemap="#kitty" /&gt
+                <br />
+                &lt map id="kitty"&gt
+                <br />
+                &nbsp   &nbsp   &nbsp &lt area shape="circ" coords="205,120,100" href="http://www.kitty.com" /&gt
+                <br />
+                &lt /map&gt
+            </p>
+            <br />
+            <b>על מנת ליצור מפת תמונה עלינו לבצע מספר שלבים: </b>
+            <ol>
+                <li>
+                    הוספת תמונה לקובץ ה-HTML באמצעות תגית &lt img&gt והוספת התכונה usemap עם # (רשתית) בהתחלה. הערך של תכונה זו יציין את ה- id של מפת התמונה.
+                </li>
+                <li>
+                    הגדרת מפת התמונה באמצעות תגית &lt map&gt והוספת התכונה id עם ערך תואם לערכה של התכונה usemap של תגית ה - &lt img&gt. שימו לב שכעת יש להוסיף את הערך רק ללא ה # (רשתית).
+                </li>
+                <li>
+                    כל אזור יוגדר באמצעות תגית  &lt area/&gt כאשר לתגית זו נגדיר מספר תכונות:
+                    <ul>
+                        <li>shape – הצורה של האזור (circle/rect/poly).</li>
+                        <li>cords – הקואורדינאטות של הצורה בתוך התמונה. </li>
+                        <li>href – הקישור אליו יפנה האזור. </li>
+                        <li>target – היכן יפתח הקישור( כמו בתגית &lt a&gt).</li>
+                    </ul>
+                </li>
+            </ol>
+            <br />
+            סוגי הצורות ושיטת הגדרתם:
+            <ul>
+                <li>circle (עיגול) – באמצעות נקודת אמצע ורדיוס (x,y,radius)</li>
+                <li>rect (מלבן) – באמצעות 2 נקודות: שמאלית עליונה וימנית תחתונה (x1,y1,x2,y2) </li>
+                <li>poly (מצולע עד 100 צלעות) – באמצעות רצף של נקודות (x1,y1,x2,y2,…….,xn,yn)</li>
+            </ul>
+            <br />
+            <br />
+            את הקואורדינאטות ניתן למצוא באמצעות תוכנה פשוטה לעריכת תמונה .
+            <br />
+            <br />
+            ניתן להגדיר כמה צורות שרוצים.
+        </div>
+    </script>
+
+    <script id="t_11_2" type="text/template">
+        <div>
+            <ol>
+                <li>קחו תמונה של smiley face כלשהי. </li>
+                <li>
+                    שימו אותה על העמוד, עצבו מפת תמונה ככה שכל עין תוביל לעמוד אחר.
+                    אחד ל google והשני ל .ynet
+                </li>
+                <li>עצב את החיוך עם poly כך שהוא יוביל לאחד העמודים שבניתם בתרגילים קודמים.</li>
+            </ol>
+        </div>
+    </script>
+
+    <script id="t_12_1" type="text/template">
+        <div>
+            Frames הינן חלוקות משנה של מסך הדפדפן. כל חלוקת משנה נקראת מסגרת
+            (frame).כל מסגרת מוגדרת כדף HTML עצמאי עם סרגל גלילה אישי. ניתן ליצור מסגרת אשר לחיצה על קישור בתוכה משנה את תוכן המסגרת הסמוכה לה, מעין שלט רחוק או לוח בקרה.
+            <br />
+            <br />
+            למעשה, עבור יצירת עמוד frame בסיסי, עלינו ליצור לפחות 3 דפיHTML  נפרדים.
+            עמוד אחד המגדיר את ה- frames ואת האופן בו הן יחלקו את המסך ביניהן וכן עלינו ליצור לפחות עוד שני עמודי HTML
+            המהווים את תוכן המסך (עמוד בתוך כל מסגרת). כמובן שניתן ליצור יותר משני frames באותו עמוד הגדרות.
+            <br />
+            <br />
+            - קובץ ההגדרות main.htm
+            <br />
+            <img alt="p1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAi0AAAD1CAYAAACcG8UZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAABgySURBVHhe7d15tI3VH8fx702TopVVa0ll6GeWq7RE3AZWMiQV4so8NEghQ6OSliZTGUOpNEkZMxYyj+VGUiwsQyGhMoRK5ee77Ufnnusc93LOvc9+zvu11lnPs5+9n/MX937uHpOOHiMAAAA+d5a9AgAA+BqhBQAAOIHQAgAAnEBoAQAATiC0AAAAJxBaAACAEwgtAADACYQWAADgBEILAABwAqEFAAA4gdACAACcQGgBAABOILQAAAAnEFoAAIATCC0AAMAJhBYAAOAEQgsAAHACoQUAADiB0AIAAJxAaAEAAE4gtAAAACcQWgD43rx586RatWq2BCBREVoAAIATCC0AAMAJhBYAAOAEQgsAAHACoQUAADiB0AIAAJxAaAEAAE4gtAAAACcQWgAAgBMILQAAwAlJR4+x9wDgG88//7y9O0638q9ataotidxyyy3pygCCj9ACwJeinTekYWXu3Lm2BCBRMDwEwJc0mETqSXnuuefsHYBEQmgB4FsnCyfRwgyAYCO0APCtkwUUelmAxMWcFiAGnnnmGXuHWNu6dat88MEH5r5w4cLSrFkzc4/j8uXLJ127drUlINgILUAMVKhQQdLS0mwJyD79+vUjtCBhMDwEAACcQGgBAIctXrxYhgwZYj5A0DE8BMRA+PCQbnwWyYYNG+Scc86xJSBrjhw5Ijt27LAlkZo1a0rlypXNPZOUEXSEFiAGwkNL27ZtpWDBgraU3rRp06ROnTq2BGTe3r17ZezYsbJ9+3b7hNCCxEJoAWIgq6GlXr16kpqaap8AmTN48GBCCxIac1qAONPl0PrLxPuULVvW1gBZV6BAAXsHJB5CCwAAcAKhBQAAOIHQAgAAnEBoAQAATiC0AAAAJxBaAACAEwgtAOJm27Ztsnz5cnONROvHjx9vSwAQGaEFQFzMmjVL2rVrJwMHDjTHGpwsmOzfv1/GjRsXNbRoGwBQhBYAcfH999/L1KlTZfTo0WaDvRdeeMHW/Oeiiy6SMmXK2FJG2kPzzjvv2BKAREdoARAXrVu3tncilSpVkkgnhnihRXtURo0aZYaLlAaWhx56yGxZrwFIae+NN+SkbfWd8PcABBehBUBcaC+KR4PHbbfdZksZHThwwAwR5c2bVx588METQ0IadLyw4w036VXrZ86cKY8//rjpifHeI7gAwUZoARB3Om/l2WeftaWMNHRoz0yDBg3kyiuvlLVr15qrBh+9am+MF3q8+06dOpnwold9T3tzli1bZtoACCZCC4C40p4RDRahPS/RZLZduGhzYwAEA6EFQNzokI/2hhAoAMQCoQVAXGhg0TkmOryj19mzZ5teF6/OE20PFx02UtHaeLx5MACCi9ACIOZ+++03E0w0bOg+Lfp5++23zbwTpXVjxowxQUNXBmk40au3SkivWnfPPfeYwON99H2t0+/12upzLetH38lMwAHgpqSjkdYhAsi0ChUqSFpami2JtG3bVgoWLGjudY+SXLlymXvVpk0bKV68uKSmptonCIqDBw/KqlWr5MiRI+k+f//9t7n+8ccf5pOcnCwpKSn2rcwbPHiwLFq0SFasWGGfiNSsWVMqV65s7p977jlzBYKKnhYAiJELL7xQzj33XBNadXl2hw4dpEuXLmZpdvfu3aVXr14yY8aM0wosAAgtABBT119/vfTo0cOWMrr33nvtHYCsIrQAQIy1bNnSzMcJV7ZsWWncuLEtAcgqQgsAxEHv3r1PTDz26Nym2rVrm118df4LgKwhtABAnOgk7MKFC5t77WWZMGGCPPDAAzJnzhwTXoYOHSq7d+829QBOjdACAHGim+p17NjxxORcVa9ePXn//fdNoFmzZo0JL3369JEtW7aYegCREVoAII7uvvtuc4zBnXfeaZ8cV6NGDRk2bJgMGjRIdu3aZcKLLln29p8BkBGhBQDiTJc/R1KlShXp16+ffPzxx5KUlGRWFz322GPy1Vdf2RYAPIQWAPCBcuXKSc+ePc28l/z585vemfbt28u8efNsCwCEFgDwkaJFi0q3bt1k4sSJZufcl156ySyhnj59um0BJC5CCwD4kPa2PPTQQ6bnpXr16jJy5EgzhLRnzx7bAkg8hBYA8LE8efJI8+bNTXjRIaRff/3V1gCJh9ACAI4oXbq0lChRwpaO27Rpkxw4cMCWgGAjtACAw3RnXV06PXv2bFm/fr19CgQToQUAHKaTdZs2bSp//fWXOaxRT5ZeuXKlrQWChdACAI674oor5Pbbb5fly5dL3rx5pW7dutK6dWtZuHChbQEEA6EF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">
+
+        </div>
+    </script>
+
+    <script id="t_12_2" type="text/template">
+        <div>
+            דף ההגדרות הראשי אינו כולל פקודת Body ולכן אינו מכיל תוכן עצמאי. תוכן דף ה- Frames הוא תוכן הדפים המוצגים בתוכו .
+            <br />
+            במקום מכולת ה- Body תופיע המכולה frameset  אשר תגדיר את היחסים בין המסגרות.
+            בתוך המכולה הזו נכתוב את ההפניות למסגרות השונות.
+            <p class="eng">
+                &lt html&gt
+                <br />
+                &lt head&gt&lt
+                <br />
+                &nbsp &nbsp &nbsp title&gt Frames &lt /title&gt &lt
+                <br />
+                /head&gt
+                <br />
+                &lt frameset rows="50%, 50%"&gt
+                <br />
+                &nbsp &nbsp &nbsp &lt frame src="page1.html" name=”pg1” /&gt
+                <br />
+                &nbsp &nbsp &nbsp &lt frame src="page2.html" name=”pg2” /&gt
+                <br />
+                &lt/frameset&gt
+                <br />
+                &lt/html&gt
+            </p>
+            <b>הסבר הפקודות:</b>
+            <br />
+            <b>Rows - </b>חלוקת המסך היא לשורות. ניתן להחליףcols-  עבור עמודות.
+            <br />
+            <b>"%05,%05" - </b>אופן חלוקת המסך בין המסגרות.
+            ההגדרה הראשונה בסדר מתייחסת תמיד לפריים השמאלי ביותר, או העליון ביותר. במקרה זה שתי המסגרות יהיו באותו הגודל.
+            <br />
+            <br />
+            פקודת frame מגדירה את תוכן כל אחד מהמסגרות :
+            <br />
+            <br />
+            <b>"   "=src - </b>שם קובץ ה- HTML שיהווה את תוכן המסגרת.
+            <br />
+            <b>"   "=name -</b> שם סימבולי למסגרת. שם זה ישמש בכדי לאפשר הפניות אל המסגרת.
+        </div>
+
+    </script>
+
+    <script id="t_12_3" type="text/template">
+        <div>
+            ניתן לחלק את המסך למסגרות נוספות. לשם כך ניתן להשתמש ביחידות מידה שונות:
+            אחוזים ופיקסלים, אם רוצים.
+            <p class="eng">
+                &lt frameset rows="100, 15%, *"&gt
+                <br />
+                &nbsp &nbsp &nbsp &lt frame src="page1.html" /&gt
+                <br />
+                &nbsp &nbsp &nbsp &lt frame src="page2.html" /&gt
+                <br />
+                &nbsp &nbsp &nbsp &lt frame src="page3.html" /&gt
+                <br />
+                &lt/frameset&gt
+            </p>
+            בחלוקה הנ"ל המסגרת הראשונה תתפוס 100 פיקסלים מגובה המסך. המסגרת השנייה תתפוס 15 אחוזים מגובה המסך
+            והמסגרת השלישית תתפוס את היתר(סימן הכוכבית מורה לה לתפוס את שאר המסך).
+            <br />
+            <h2>חלוקות שורה ועמודה במקביל </h2>
+            ניתן ליצור חלוקות מסך המשלבות חלוקות אורך ורוחב של המסך .
+            <br />
+            השיטה היא לקבוע חלוקה ראשית לשורות או
+            עמודות ואז את אחת המסגרות להחליף בהגדרות חלוקה נוספות. כלומר להחליף את תגית ה- frame במכולת frameset.
+            <br />
+            לדוגמא:
+            <p class="eng">
+                &lt frameset rows="50%, 50%"&gt
+                <br />
+                &nbsp &nbsp &nbsp &lt frame src="page1.html" /&gt
+                <br />
+                &lt frameset rows="50%, 50%"&gt
+                <br />
+                &nbsp &nbsp &nbsp &lt frame src="page2.html" /&gt
+                <br />
+                &nbsp &nbsp &nbsp &lt frame src="page3.html" /&gt
+                <br />
+                &lt/frameset&gt
+                <br />
+                &lt/frameset&gt
+            </p>
+
+        </div>
+
+
+    </script>
+
+    <script id="t_12_4" type="text/template">
+        <div>
+            <h2>תכונותיה של תגית ה- frame </h2>
+            <table border="1">
+
+                <tr>
+                    <td><b>שם התכונה:</b></td>
+                    <td><b>אופן השימוש:</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>"noresize="noresize </b></td>
+                    <td>המשתמש אינו יכול לשנות את רוחב/גובה המסגרת ע"י גרירת הקו המפריד. </td>
+                </tr>
+
+                <tr>
+                    <td><b>"scrolling="no"/"yes"/"auto</b></td>
+                    <td>
+                        קובעת מראש את התנהגות סרגל הגלילה במסגרת.
+                        כאשר ערך ברירת המחדל הוא auto, משמע, שהדפדפן יחליט על הצגת הסרגל.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>marginwidth, marginhight </b></td>
+                    <td>מציינים את גודל השוליים מגבול המסגרת. </td>
+                </tr>
+
+            </table>
+            <h2>תכונותיה תגית ה- frameset </h2>
+            <table border="1">
+
+                <tr>
+                    <td><b>שם התכונה:</b></td>
+                    <td><b>אופן השימוש:</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>"Frameborder="0</b></td>
+                    <td>מאפשרת לבטל את קו ההפרדה בין המסגרות (0-ללא, 1- עם). </td>
+                </tr>
+
+                <tr>
+                    <td><b>"Border="5</b></td>
+                    <td>מציינת את עובי הגבול בין המסגרות </td>
+                </tr>
+
+                <tr>
+                    <td><b>"Bordercolor="blue</b></td>
+                    <td>מאפשרת לתת צבע לגבול בין המסגרות. </td>
+                </tr>
+
+            </table>
+        </div>
+    </script>
+
+    <script id="t_12_5" type="text/template">
+        <div>
+            כאשר מופעל קישור בתוך מסגרת מתחלף תוכן מסגרת זו בתוכן יעד הקישור. ניתן לקבוע שקישור במסגרת מסוימת ישפיע על תוכן מסגרת אחרת.
+            <ol>
+                <li>בדף ההגדרות הראשי יש לתת שמות למסגרות( אם עוד לא עשיתם זאת).</li>
+                <li>בעת יצירת קישור באחד מדפי המסגרת, נפנה את הקישור לשם המסגרת אותה נרצה לשנות. </li>
+            </ol>
+        </div>
+    </script>
+
+    <script id="t_12_6" type="text/template">
+        <div>
+            נבחר שמות כרצוננו כך שיהיה קל לזכור אותם.
+            <br />
+            דוגמא:
+            <br />
+            <p class="eng">
+                &lt frame src="one.htm" name="left" /&gt
+                <br />
+                &lt frame src ="two.htm" name ="right" /&gt
+            </p>
+            <h2>הפניית הקישורים בדפי ה- HTML </h2>
+            בקובץ בו נמצא הקישור הרלוונטי (זה שצריך להביא את תוצאתו ל-frame אחר),
+            עליכם להוסיף את הפרמטר target, המכיל את שם ה-frame אליו רוצים להפנות את הקישור.
+            <br />
+            למשל, אם הקישור הבא נמצא בקובץ one.htm (שיושב ב-frame השמאלי), ונרצה שהוא יביא את דף מספר 3 ל-frame הימני, יש לכתוב את השורה:
+            <p class="eng">
+                &lt a href=”three.htm" target="right"&gt Page 3&lt/a&gt
+            </p>
+            <h2>שמות שמורים</h2>
+            ישנם שמות שמורים להפניות. שמות שמורים ישמשו אותנו לפעולות מיוחדות.
+            <br />
+            <b>target="_top" - </b>במידה ונרצה שהקישור יאפיל על העמוד כולו ויחליף את כל המסגרות.
+            <br />
+            <b>target ="_blank" - </b>הפעלת הקישור תפעיל חלון נוסף של הדפדפן ותאפשר לנו
+            לשמור על החלון שלנו פתוח. בשיטה זו ניתן להשתמש גם בקישורים רגילים ללא קשר למסגרות.
+        </div>
+    </script>
+
+    <script id="t_12_7" type="text/template">
+        <div>
+            ניתן ליצור מסגרת פנימית בתוך דף ה - HTML. היתרון בשימוש במסגרת פנימית הוא שאין צורך להגדיר קובץ אשר יכיל
+            frameset והיא מוגדרת בתוך הדף עצמו. ניתן ליצור מסגרת פנימית בתוך טבלה דבר היכול לתת
+            יותר שליטה בעיצוב. כמובן שניתן ליצור בדף אחד יותר ממסגרת פנימית אחת ולהציג דפים ממקורות שונים.
+            <br />
+            מסגרת פנימית מתנהגת בדיוק כמו מסגרת רגילה בכך שהיא מכילה דף Web אחר.
+            התנהגותה דומה גם לגבי קישורים בין מסגרות (שימוש בשם מסגרת ובתכונה target של הקישורים),ותכונותיה דומות למסגרת רגילה (
+            למעט לתכונה noresize שלא קיימת).
+            <br />
+            <br />
+            הגדרת מסגרת פנימית בתוך דף HTML:
+            <br />
+            כאשר נלחץ על הקישור (המפנה לאתר גוגל) יעד הקישור יוצג בתוך המסגרת הפנימית בהתאם לתכונה  target שהוגדרה עם ה - name של ה - iframe.
+            <div class="ex" id="ex37"></div>
+        </div>
+    </script>
+
+    <script id="t_12_8" type="text/template">
+        <div>
+            למרות הכוח הרב הטעון בשימוש במסגרות, ישנם הרבה הטוענים שהשימוש במסגרות אינו נכון ממספר סיבות:
+            <br />
+            <ol>
+                <li>
+                    ישנם דפים אשר מיועדים להצגה במסגרת ואם לא יצגו כך, הם יהיו חסרי משמעות (לדוגמא תפריט קישורים המפנים
+                    לדפים אחרים שיוצגו במסגרת ליד) .במידה והמשתמש יפנה לכתובת של דף כזה (ישירות) הוא יוצג לבדו ויהיה חסר משמעות.
+                </li>
+                <li>בהמשך לבעיה 1 מנועי חיפוש אשר ימצאו דף זה, לא יודעים שהוא חלק מ-frameset ולכן יפנו את המשתמש ישירות לדף, שיראה לו חסר משמעות. </li>
+                <li>
+                    בלחיצה על לחצן הדפסה תודפס המסגרת הפעילה ולא הדף כולו. אומנם ניתן גם להגדיר אחרת בהגדרות הדפסה של
+                    הדפדפן, אך דבר זה יוצר בעיה, מפני שלפעמים המשתמש רוצה להדפיס דף עם מידע ממסגרת מסוימת (או את כל מבנה המסגרות) ובפועל יודפס
+                    לו דף ממסגרת אחרת. הבעיה מעצימה אם המשתמש לא יודע מהם מסגרות ולכן לא יודע איך להדפיס את המידע בו הוא מעוניין.
+                </li>
+            </ol>
+        </div>
+
+
+    </script>
+
+    <script id="t_13_1" type="text/template">
+        <div>
+            פעולה מעניינת נוספת שניתן לבצע באמצעות HTML היא יצירת טקסט "מטייל" בתוך תחום מסוים. נהוג לראות זאת הרבה באתרי חדשות אשר מציגים
+            את החדשות האחרונות רצות (בד"כ מלמטה למעלה) בתוך תחום מסוים.
+            <br />
+            <br />
+            ניתן לבצע זאת באמצעות תגית &lt marquee&gt אשר תכונותיה מגדירות את התחום ותוכן הפקודה הינו מה שיטייל בתוך תחום זה:
+            <div class="ex" id="ex38"></div>
+            <b>תכונות עיקריות: </b>
+            <ul>
+                <li>width - רוחב התחום</li>
+                <li>height – גובה התחום </li>
+                <li>bgcolor – צבע הרקע של התחום</li>
+                <li>direction - הכיוון בו הטקסט יטייל (left/right/up/down)  </li>
+                <li>behavior – התנהגות הטקסט כאשר יגיע לסוף התחום (scroll/slide/alternate)</li>
+                <li>scrolldelay – קצב ההתקדמות של הטקסט (במילי שניות)</li>
+                <li>loop – מספר הפעמים בהם יטייל הטקסט לאורך/רוחב התחום </li>
+            </ul>
+            ניתן להכניס בתוכן הפקודה גם קישורים, רשימות וכל סוגי עיצוב הטקסט.
+            <br />
+            <br />
+            <b>הערה:</b>
+            <br />
+            התגית marquee אינה תואמת לתקן XHTML, אך למרות זאת היא עובדת בכל הדפדפנים וניתן להשתמש בה.
+        </div>
+
+    </script>
+
+
+
+
+    <script>
+        var dataStore = [
+            {
+                mainTitle: "מבוא ל- HTML ", subItems: [
+                    { title: "הקדמה", templateId: "t_1_1" },
+                  
+                   
+                    { title: "איפה מתחילים לכתוב HTML", templateId: "t_1_4" },
+                    { title: "תהליך כתיבת קובץ HTML וטעינתו בדפדפן", templateId: "t_1_5" },
+                     { title: "סרטונים", templateId: "t_1_6" }
+                ]
+            },
+            {
+                mainTitle: "תחביר השפה ", subItems: [
+                    { title: "תחביר השפה ", templateId: "t_2_1" },
+                    { title: "סוגי התגיות  ", templateId: "t_2_2" },
+                    { title: "התגית Title", templateId: "t_2_3" },
+                    { title: "תכונות של תגיות (Attributes) ", templateId: "t_2_4" },
+                    { title: "הערות ", templateId: "t_2_5" },
+                    { title: "תרגילים", templateId: "t_2_6" },
+                    { title: "סרטונים", templateId: "t_2_7" }
+                ]
+            },
+
+            {
+                mainTitle: "עיצוב טקסט ", subItems: [
+                    { title: "עיצוב טקסט", templateId: "t_3_1" },
+                    { title: "עיצוב גופן ", templateId: "t_3_2" },
+                     { title: "סרטונים", templateId: "t_3_3" }
+                ]
+            },
+            {
+                mainTitle: "קישורים", subItems: [
+                    { title: "קישורים", templateId: "t_4_1" },
+                    { title: "עוגנים (Anchors) ", templateId: "t_4_2" },
+                    { title: "תרגילים", templateId: "t_4_3" }
+                ]
+            },
+            {
+                mainTitle: "תמונות ואובייקטים ", subItems: [
+                    { title: "תמונות ואובייקטים", templateId: "t_5_1" },
+                    { title: "שילוב תמונות ", templateId: "t_5_2" },
+                    { title: "נתיבים ", templateId: "t_5_3" },
+                    { title: "הוספת תמונה לרקע הדף  ", templateId: "t_5_4" },
+                    { title: "תמונה כקישור  ", templateId: "t_5_5" },
+                    { title: "תכונות נוספות של התגית img ", templateId: "t_5_6" },
+                    
+                     { title: "סרטונים", templateId: "t_5_8" }
+                ]
+            },
+
+          
+            {
+                mainTitle: "טבלאות", subItems: [
+                    { title: "יצירת טבלאות ", templateId: "t_7_1" }
+                ]
+            },
+            {
+                mainTitle: "טפסים	", subItems: [
+                    { title: "טפסים", templateId: "t_8_1" },
+                    { title: "פקדי הטופס  ", templateId: "t_8_2" },
+                    { title: "פקדים לקליטת טקסט   ", templateId: "t_8_3" },
+                    { title: "	פקדי בחירה  ", templateId: "t_8_4" },
+                    { title: "כפתורים  ", templateId: "t_8_5" },
+                     { title: "סרטונים", templateId: "t_8_6" }
+                ]
+            },
+            {
+                mainTitle: "פקודות Meta", subItems: [
+                    { title: "פקודות Meta", templateId: "t_9_1" },
+                    { title: "שתילת מילות מפתח עבור מנועי חיפוש ", templateId: "t_9_2" },
+                    { title: "מעבר אוטומטי בין דפים ", templateId: "t_9_3" }
+                ]
+            },
+            {
+                mainTitle: "5 HTML נספח א' - מה חדש", subItems: [
+                    { title: "HTML5", templateId: "t_10_1" }
+                ]
+            },
+           
+            {
+                mainTitle: "נספח ג' - מסגרות ", subItems: [
+                   
+                    
+                    { title: " Iframe - מסגרת פנימית  ", templateId: "t_12_7" },
+                    
+
+                ]
+            },
+            {
+                mainTitle: "נספח ד' - תגית Marquee ", subItems: [
+                    { title: "תגית Marquee", templateId: "t_13_1" }
+
+                ]
+            }
+
+        ];
+
+
+
+        var dataStorage = {
+            ex1: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+</body>
+</html>
+
+*/
+            }),
+            ex2: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body bgcolor="orange">
+    This is my orange page!.
+</body>
+</html>
+
+*/
+            }),
+            ex3: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+
+<body>
+    <b>Row 1</b>
+    <br />
+    <b>Row 2</b>
+
+</body>
+</html>
+
+
+*/
+            }),
+            ex4: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <div>
+        Before
+    <p>
+        Row 1<br />
+        Row 2<br />
+        Row 3<br />
+        Row 4<br />
+        Row 5<br />
+    </p>
+        After
+        <div>
+</body>
+</html>
+*/
+            }),
+            ex5: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <p style="text-align: center">
+        Row 1<br />
+        Row 2<br />
+        Row 3<br />
+        Row 4<br />
+        Row 5<br />
+    </p>
+</body>
+</html>
+*/
+            }),
+            ex6: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <p title="more information">
+        Just some text
+    </p>
+</body>
+</html>
+*/
+            }),
+            ex7: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <p>
+        There is some space between this word &nbsp; &nbsp;
+ &nbsp; and this word
+    </p>
+</body>
+</html>
+*/
+            }),
+            ex8: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <h1>this is h1</h1>
+    <h2>this is h2</h2>
+    <h3>this is h3</h3>
+    <h4>this is h4</h4>
+    <h5>this is h5</h5>
+    <h6>this is h6</h6>
+</body>
+</html>
+*/
+            }),
+            ex9: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body style="background-color: Gray; color: DarkBlue">
+    Hello!!
+</body>
+</html>
+*/
+            }),
+            ex10: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <a href="http://www.johnbryce.co.il">To JohnBryce</a>
+</body>
+</html>
+*/
+            }),
+            ex11: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <a id="top">this is the top of the file</a>
+    <a href="#top">back to the top of the file</a>
+</body>
+</html>
+*/
+            }),
+            ex12: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <embed src="http://www.youtube.com/v/b5z60EKtLUQ&rel=1"
+        type="application/x-shockwave-flash" width="425" height="355">
+</body>
+</html>
+*/
+            }),
+            ex13: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="425" height="355">
+        <param name="movie" value="http://www.youtube.com/v/b5z60EKtLUQ&rel=1"></param>
+    </object>
+</body>
+</html>
+*/
+            }),
+            ex14: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="425" height="355">
+        <param name="movie" value="http://www.youtube.com/v/b5z60EKtLUQ&rel=1"></param>
+        <embed src="http://www.youtube.com/v/b5z60EKtLUQ&rel=1"
+            type="application/x-shockwave-flash" width="425" height="355" />
+    </object>
+</body>
+</html>
+*/
+            }),
+            ex15: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <ol>
+        <li>bread</li>
+        <li>milk</li>
+        <li>butter</li>
+    </ol>
+</body>
+</html>
+*/
+            }),
+            ex16: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <ul>
+        <li>bread</li>
+        <li>milk</li>
+        <li>butter</li>
+    </ul>
+</body>
+</html>
+*/
+            }),
+            ex17: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <ol>
+        <li>bread</li>
+        <li>milk</li>
+        <ul>
+            <li>3%</li>
+            <li>1%</li>
+        </ul>
+        <li>butter</li>
+    </ol>
+</body>
+</html>
+*/
+            }),
+            ex18: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <dl>
+        <dt>Apple</dt>
+        <dd>
+            Fruit with red, yellow or green skin and sweet flesh.
+            Sometimes, it is being used with cakes.
+        </dd>
+        <dt>Apple Computer, Inc.</dt>
+        <dd>Manufacturer of presonal computers
+        </dd>
+        <dt>Banana</dt>
+        <dd>
+            The world's most popular fruit.
+            The fruit has a yellow skin and it
+            grows as part of a cluster of Bananas.
+        </dd>
+    </dl>
+</body>
+</html>
+*/
+            }),
+            ex19: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Rome
+            </td>
+            <td>Paris
+            </td>
+        </tr>
+        <tr>
+            <td>Tel Aviv
+            </td>
+            <td>London
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
+*/
+            }),
+            ex20: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <td rowspan="2">Rome
+            </td>
+            <td>Paris
+            </td>
+            <td>New York
+            </td>
+        </tr>
+        <tr>
+            <td>Tel Aviv
+            </td>
+            <td>London
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+*/
+            }),
+            ex21: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <input type="Text" name="name" value="Enter name" size="40" />
+</body>
+</html>
+*/
+            }),
+            ex22: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <input type="password" name="pas" size="20" maxlength="8" />
+</body>
+</html>
+*/
+            }),
+            ex23: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <textarea name="address" rows="3" cols="20">Enter address</textarea>
+</body>
+</html>
+*/
+            }),
+            ex24: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <input type="hidden" name=" hidden" value="hidden value" />
+</body>
+</html>
+*/
+            }),
+            ex25: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <input type="checkbox" name="sport" value="checked" />Sport<br />
+    <input type="checkbox" name="reading" value="checked" />Reading<br />
+    <input type="checkbox" name="tv" value="checked" />T.V.<br />
+    <input type="checkbox" name="internet" value="checked" />Internet
+</body>
+</html>
+*/
+            }),
+            ex26: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <input type="radio" name="gender" value="M" />Male
+    <br />
+    <input type="radio" name="gender" value="F" />Female
+</body>
+</html>
+*/
+            }),
+            ex27: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Gender selection</legend>
+        <input type="radio" name="gender" value="M" />Male
+        <br />
+        <input type="radio" name="gender" value="F" />Female
+    </fieldset>
+</body>
+</html>
+*/
+            }),
+            ex28: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <select name="area">
+        <option value="N">North</option>
+        <option value="C" selected="selected">Center</option>
+        <option value="S">South</option>
+        <option value="J">Jerusalem</option>
+    </select>
+</body>
+</html>
+*/
+            }),
+            ex29: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <input type="button" value="Button" />
+</body>
+</html>
+*/
+            }),
+            ex30: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <input type="submit" value="Submit" />
+</body>
+</html>
+*/
+            }),
+            ex31: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <input type="reset" value="Reset" />
+</body>
+</html>
+*/
+            }),
+            ex32: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <input type="file" name="img" size="50" />
+</body>
+</html>
+*/
+            }),
+            ex33: (function () { /*
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <p>Example paragraph</p>
+</body>
+</html>
+*/
+            }),
+            ex34: (function () { /*
+<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <p>Example paragraph</p>
+</body>
+</html>
+
+*/
+            }),
+            ex35: (function () { /*
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <p>
+        A green circle:
+     <svg>
+         <circle r="50" cx="50" cy="50" fill="green" />
+     </svg>
+    </p>
+</body>
+</html>
+*/
+            }),
+            ex36: (function () { /*
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <input list="browsers" />
+    <datalist id="browsers">
+        <option value="Safari"></option>
+        <option value="Internet Explorer"></option>
+    </datalist>
+</body>
+</html>
+
+*/
+            }),
+            ex37: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <a href="https://www.google.co.il" target="inlineFrame">לאתר גוגל</a>
+    <br />
+    <iframe src="fileName.html" name="inlineFrame" />
+</body>
+</html>
+
+*/
+            }),
+            ex38: (function () { /*
+<!DOCTYPE html>
+<html>
+<head>
+    <title>גון בריינס הדרכה</title>
+</head>
+<body>
+    <marquee bgcolor="yellow" direction="up" height="100"
+        width="100">
+     text 1
+    <br />
+     text 2
+    <br />
+     text 3
+ <marquee />
+</body>
+</html>
+*/
+            })
+
+        };
+
+
+
+        (function (window) {
+            "use strict";
+            function classReg(className) {
+                return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+            }
+
+            var hasClass, addClass, removeClass;
+            if ("classList" in document.documentElement) {
+                hasClass = function (elem, c) {
+                    return elem.classList.contains(c);
+                };
+                addClass = function (elem, c) {
+                    elem.classList.add(c);
+                };
+                removeClass = function (elem, c) {
+                    elem.classList.remove(c);
+                };
+            } else {
+                hasClass = function (elem, c) {
+                    return classReg(c).test(elem.className);
+                };
+                addClass = function (elem, c) {
+                    if (!hasClass(elem, c)) {
+                        elem.className = elem.className + " " + c;
+                    }
+                };
+                removeClass = function (elem, c) {
+                    elem.className = elem.className.replace(classReg(c), " ");
+                };
+            }
+            function toggleClass(elem, c) {
+                var fn = hasClass(elem, c) ? removeClass : addClass;
+                fn(elem, c);
+            }
+            var classie = {
+                hasClass: hasClass,
+                addClass: addClass,
+                removeClass: removeClass,
+                toggleClass: toggleClass
+            };
+            if (typeof define === "function" && define.amd) {
+                define(classie);
+            } else {
+                window.classie = classie;
+            }
+        })(window);
+
+        var $ = function (selector) {
+            return document.querySelector(selector);
+        };
+
+
+        String.prototype.htmlToTxt = function () {
+            return this.replace(/>/g, '&gt;').replace(/</g, '&lt;').replace(/"/g, '&quot;').replace(/'/g, "&apos;");
+        };
+
+        function getMultilineString(func) {
+            return func.toString().split('\n').slice(1, -1).join('\n').replace("*/", "").replace(/scrip>/g, 'script>');
+        }
+
+
+
+        function showExamle(exampleId) {
+            var divElemnt = document.getElementById(exampleId + "div");
+            var frameWidth = document.getElementsByClassName("linedHeader");
+            if (frameWidth[0]) {
+                frameWidth = frameWidth[0].offsetWidth;
+                frameWidth = (isNaN(frameWidth)) ? 400 : frameWidth - 100;
+                divElemnt.innerHTML = '<iframe width="' + frameWidth + '" class="frame-show" srcdoc="' + getMultilineString(dataStorage[exampleId]).htmlToTxt() + '"></iframe>';
+
+            }
+        }
+
+        function showFullPage(exampleId) {
+            newWindow = window.open();
+            newdocument = newWindow.document;
+            newdocument.write(getMultilineString(dataStorage[exampleId]));
+        }
+
+
+        function accordionSetter(accordion) {
+            accordion.addEventListener("click", function (e) {
+                e.stopPropagation();
+                e.preventDefault();
+                if (e.target && e.target.nodeName == "A") {
+                    var classes = e.target.className.split(" ");
+                    if (classes) {
+                        for (var x = 0; x < classes.length; x++) {
+                            if (classes[x] == "acc_title") {
+                                var title = e.target;
+                                var content = e.target.parentNode.nextElementSibling;
+                                classie.toggleClass(title, "acc_title_active");
+                                if (classie.hasClass(content, "acc_panel_col")) {
+                                    if (classie.hasClass(content, "anim_out")) {
+                                        classie.removeClass(content, "anim_out");
+                                    }
+                                    classie.addClass(content, "anim_in");
+                                } else {
+                                    classie.removeClass(content, "anim_in");
+                                    classie.addClass(content, "anim_out");
+                                }
+                                classie.toggleClass(content, "acc_panel_col");
+                            }
+                        }
+                    }
+                }
+            })
+        }
+
+        function toggleAllSections(toggleStateFlag) {
+            var all = document.getElementsByClassName("acc_title");
+            for (var x = 0; x < all.length; x++) {
+                var title = all[x];
+                var content = title.parentNode.nextElementSibling;
+                classie.toggleClass(title, "acc_title_active");
+                if (toggleStateFlag) {
+                    if (classie.hasClass(content, "acc_panel_col")) {
+                        if (classie.hasClass(content, "anim_out")) {
+                            classie.removeClass(content, "anim_out");
+                        }
+                        classie.addClass(content, "anim_in");
+                        classie.toggleClass(content, "acc_panel_col");
+                    }
+                }
+                else {
+                    if (!classie.hasClass(content, "acc_panel_col")) {
+                        {
+                            classie.removeClass(content, "anim_in");
+                            classie.addClass(content, "anim_out");
+                        }
+                        classie.toggleClass(content, "acc_panel_col");
+                    }
+                }
+            }
+        }
+
+        /**
+        * detect IE
+        * returns version of IE or false, if browser is not Internet Explorer
+        */
+        function detectIE() {
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf('MSIE ');
+            if (msie > 0) {
+                // IE 10 or older => return version number
+                return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+            }
+            var trident = ua.indexOf('Trident/');
+            if (trident > 0) {
+                // IE 11 => return version number
+                var rv = ua.indexOf('rv:');
+                return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+            }
+            var edge = ua.indexOf('Edge/');
+            if (edge > 0) {
+                // Edge (IE 12+) => return version number
+                return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+            }
+            // other browser
+            return false;
+        }
+
+        function codeExampleRender() {
+
+            var ex_elements = document.getElementsByClassName('ex');
+            for (var i = 0; i < ex_elements.length; ++i) {
+                var currentItem = ex_elements[i];
+                var currentEx = ex_elements[i].id;
+                var strCodeShow = '';
+
+                if (!detectIE()) {
+                    strCodeShow = '<div class="type-1" onclick="showExamle(\'' + currentEx + '\')">' +
+                    '<a class="btn btn-3">' +
+                    '<span class="txt">הצג דוגמא עם קוד</span>' +
+                    '<span class="round"><i>&gt;</i></span>' +
+                    '</a>' +
+                    '</div>';
+                }
+                strCodeShow += '<div class ="type-1" onclick="showFullPage(\'' + currentEx + '\')">' +
+                    '<a class="btn btn-3">' +
+                    '<span class="txt">נסה אותי בתצוגה מלאה</span>' +
+                    '<span class="round"><i>&gt;</i></span>' +
+                    '</a>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="eng">' +
+                    '<div id="' + currentEx + 'div" class="exDemo"></div>' +
+                    '<pre><code>' + getMultilineString(dataStorage[currentEx]).htmlToTxt() + '</code></pre>' +
+                    '</div>';
+
+                currentItem.innerHTML = strCodeShow;
+            }
+        }
+
+        function boldSection(elemId) {
+            var elemToChange = document.getElementById(elemId);
+            elemToChange.style.textDecoration = "underline";
+            setTimeout(function () {
+                elemToChange.style.textDecoration = "none";
+            }, 6000);
+        }
+
+        window.onload = function () {
+            var tempStr = "";
+            var listItems = "";
+            for (var i = 0; i < dataStore.length; i++) {
+                tempStr += '<h1 class="linedHeader">' + dataStore[i].mainTitle + '</h1><div class="acc' + i + '"><dl>';
+                for (var j = 0; j < dataStore[i].subItems.length; j++) {
+                    listItems += '<li onclick="boldSection(\'d' + dataStore[i].subItems[j].templateId + '\')"><a href="#d' + dataStore[i].subItems[j].templateId + '">' + dataStore[i].subItems[j].title + '</a></li>';
+                    tempStr += '<dt><a  id="d' + dataStore[i].subItems[j].templateId + '" class="acc_title" href="#">' + dataStore[i].subItems[j].title + '</a></dt>' +
+                        '<dd class="acc_panel acc_panel_col"><div class="acc_content">' + document.getElementById(dataStore[i].subItems[j].templateId).innerHTML + '</div></dd>';
+                }
+                tempStr += '</dl></div>'
+            }
+
+            document.getElementById("contentHolder").innerHTML = tempStr;
+            document.getElementById("nav-list").innerHTML = listItems;
+
+            for (var i = 0; i < dataStore.length; i++) {
+                accordionSetter($('.acc' + i));
+            }
+
+            codeExampleRender();
+        };
+
+
+    </script>
+
+    <style>
+        body {
+            background-color: black;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            padding: 0.5em;
+            text-align: center;
+            font-weight: 300;
+            color: white;
+        }
+
+        dt > a {
+            text-align: center;
+            font-weight: 300;
+            padding: 1.5em;
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            -webkit-transition: background-color 0.5s ease-in-out;
+        }
+
+        dd {
+            font-size: 1.1em;
+            line-height: 1.5em;
+            margin: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        dl {
+            background-color: white;
+            margin-bottom: 45px;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 40px 0 0 0;
+        }
+
+        .acc_title {
+            font-size: 1.3em;
+            color: black;
+            background-color: #D1D1D1;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#B0B0B0));
+            background-image: -webkit-linear-gradient(top, #F9F9F9, #B0B0B0);
+            background-image: -moz-linear-gradient(top, #F9F9F9, #B0B0B0);
+            background-image: -o-linear-gradient(top, #F9F9F9, #B0B0B0);
+            background-image: linear-gradient(to bottom, #F9F9F9, #B0B0B0);
+            filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#F9F9F9, endColorstr=#B0B0B0);
+            border: 1px solid #cacaca;
+        }
+
+        .acc_title_active {
+            font-size: 1.3em;
+            border: 1px solid #B5AEA8;
+            background-color: #B5AEA8;
+        }
+
+        .acc_content {
+            padding: 25px;
+        }
+
+        .acc_panel {
+            height: auto;
+            overflow: hidden;
+        }
+
+        @media all {
+            .acc_panel {
+                max-height: none;
+                transition: max-height 1s;
+            }
+        }
+
+        @media screen and (min-width: 48em) {
+            .acc_panel {
+                max-height: none;
+                transition: max-height 0.5s;
+            }
+        }
+
+        .acc_panel_col {
+            max-height: 0;
+        }
+
+        .anim_in {
+            animation-name: acc_in;
+            animation-duration: 0.65s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            animation-delay: 0s;
+        }
+
+        .anim_out {
+            animation-name: acc_out;
+            animation-duration: 0.55s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            animation-delay: 0s;
+        }
+
+        @keyframes acc_in {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes acc_out {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+        }
+
+        .linedHeader {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+
+            .linedHeader::before, .linedHeader::after {
+                content: '';
+                margin: 0.7em 20px 0;
+                top: 1px;
+                height: 2px;
+                flex-grow: 1;
+                background-color: white;
+            }
+
+
+        body {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 1em;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #333;
+        }
+
+        footer {
+            bottom: 0;
+            padding: 20px;
+            padding-right: 0px;
+            text-align: center;
+            color: white;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+
+        hr {
+            margin-top: 30px;
+        }
+
+        p, li {
+            line-height: 1.8;
+        }
+
+
+        .frame-show {
+            height: 400px;
+        }
+
+        .btn-wrapper {
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .btn-3 {
+            background-color: #5A5B5E;
+            text-decoration: none;
+            -moz-border-radius: 30px;
+            -webkit-border-radius: 30px;
+            border-radius: 30px;
+            padding: 12px 53px 12px 23px;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-weight: bold;
+            position: relative;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            display: inline-block;
+            cursor: pointer;
+            margin: 20px;
+            min-width: 250px;
+            max-width: 250px;
+        }
+
+            .btn-3 .round {
+                background-color: #737478;
+            }
+
+        a span {
+            position: relative;
+            z-index: 3;
+        }
+
+        a .round {
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            position: absolute;
+            right: 3px;
+            top: 3px;
+            -moz-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+            z-index: 2;
+        }
+
+            a .round i {
+                position: absolute;
+                top: 50%;
+                margin-top: -12px;
+                left: 50%;
+                margin-left: -4px;
+                -moz-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+                font-size: 20px;
+            }
+
+        .txt {
+            font-size: 1em;
+            line-height: 1.45;
+        }
+
+        .type-1 a:hover {
+            padding-left: 48px;
+            padding-right: 28px;
+        }
+
+            .type-1 a:hover .round {
+                width: calc(100% - 6px);
+                -moz-border-radius: 30px;
+                -webkit-border-radius: 30px;
+                border-radius: 30px;
+            }
+
+                .type-1 a:hover .round i {
+                    left: 12%;
+                }
+
+
+        .sub {
+            background-color: #e2d2d2;
+            background-color: #e8dddd;
+        }
+
+        .exDemo {
+            max-height: 400px;
+            max-width: 400px;
+        }
+
+        #logo-wrap {
+            height: 100px;
+            min-width: 100%;
+            text-align: left;
+            display: block;
+            padding: 18px;
+            margin-bottom: 70px;
+            text-align: center;
+            color: white;
+            font-size: 5em;
+            font-weight: 100;
+            background-color: #333;
+        }
+
+        #logo {
+            float: left;
+        }
+
+        .eng-dir {
+            direction: ltr;
+        }
+
+        .eng {
+            direction: ltr;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .rowSubject {
+            direction: ltr;
+            width: 100px;
+            font-weight: bold;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        table {
+            min-width: 100%;
+        }
+
+        #nav-holder {
+            width: 20%;
+            min-width: 13em;
+            margin: 0 auto;
+            position: fixed;
+            margin-right: 35px;
+            top: 160px;
+            z-index: 9999;
+        }
+
+        #nav-head {
+            position: relative;
+            display: inline-block;
+            font: 2em/1em sans-serif;
+            cursor: pointer;
+            user-select: none;
+            height: 2.1em;
+        }
+
+            #nav-head:hover + #nav-list {
+                display: block;
+            }
+
+        #nav-list {
+            height: 400px;
+            overflow: auto;
+            background: #eee;
+            border: 1px solid #ddd;
+            border-radius: 1%;
+            display: none;
+            position: relative;
+            top: -3.6em;
+            list-style-type: none;
+            padding: 0px;
+            margin-right: 1px;
+        }
+
+            #nav-list:hover {
+                display: block;
+            }
+
+            #nav-list li {
+                padding: 3% 5%;
+                border-top: 1px solid #fff;
+                border-bottom: 1px solid #ddd;
+                cursor: pointer;
+            }
+
+                #nav-list li a {
+                    color: black;
+                    text-decoration: none;
+                    cursor: pointer;
+                    display: block;
+                    width: 100%;
+                }
+
+                #nav-list li:first-child {
+                    border-top: none;
+                }
+
+                #nav-list li:last-child {
+                    border-bottom: none;
+                }
+
+                #nav-list li:hover {
+                    background: linear-gradient(#eee, #ddd);
+                }
+
+
+        .hamburger {
+            position: relative;
+            width: 25px;
+            height: 20px;
+            transition: transform 750ms ease-in-out;
+        }
+
+
+            .hamburger::before, .hamburger::after, .hamburger .inner {
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 2px;
+                background: #ccc;
+                transform-origin: 100% 50%;
+                transition: all 750ms ease-in-out;
+            }
+
+            .hamburger::before {
+                top: -1px;
+            }
+
+            .hamburger .inner {
+                top: 9px;
+                transform-origin: 50% 50%;
+            }
+
+            .hamburger::after {
+                top: 19px;
+            }
+
+        .round1 {
+            margin: 10px;
+            border-radius: 100px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 25px;
+            color: #ffffff;
+            width: 44px;
+            height: 44px;
+            border: 5px solid #ffffff;
+            cursor: pointer;
+        }
+
+        .btn-round-holder {
+            position: fixed;
+            margin-right: 18px;
+        }
+    </style>
+</head>
+<body dir="rtl">
+    <div class="btn-round-holder">
+        <div class="round1" onclick="toggleAllSections(true)">
+            +
+        </div>
+        <div class="round1" onclick="toggleAllSections(false)">
+            -
+        </div>
+    </div>
+
+    <nav id="nav-holder">
+        <div id="nav-head"><div class="hamburger"><div class="inner"></div></div></div>
+        <ul id="nav-list"></ul>
+    </nav>
+    <div class="container">
+        <dl>
+            <dt id="logo-wrap">
+                מדריך HTML
+                <img id="logo" src="data:image/png;base64,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" />
+            </dt>
+        </dl>
+    </div>
+
+
+
+    <div id="contentHolder" class="container"></div>
+
+    <footer>
+        <hr />
+        כל הזכויות שמורות לג'ון ברייס הדרכה בע"מ מקבוצת מטריקס
+    </footer>
+
+
+
+</body>
+</html>

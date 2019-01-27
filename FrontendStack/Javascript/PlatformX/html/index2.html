@@ -1,0 +1,150 @@
+<html>
+	<head>
+		<script>
+			function countElements(){
+				var countingMessage = [];
+				countingMessage.push("Got here");
+				countingMessage.push("Links count");
+				countingMessage.push(document.querySelectorAll("a").length);
+				
+				countingMessage.push("Imgs count");
+				countingMessage.push(document.querySelectorAll("img").length);
+				
+				
+				var proccessedMsg = countingMessage.join("\n");
+				//alert(proccessedMsg);
+				
+				document.querySelector("#output-status").innerHTML = proccessedMsg;
+				
+				setTimeout(clearStatus, 10000);
+			}
+			
+			function clearStatus(){
+				document.querySelector("#output-status").innerText = "";
+			}
+			
+			
+			function modifyMainTitle(){
+				var titleElement = document.querySelector("#my-title");
+				var userSelectedTitle = prompt("Which title do you want?", "My awesome title for my awesome page");
+				
+				console.log(userSelectedTitle);
+				titleElement.innerText = userSelectedTitle;
+			}
+			
+			/** 
+			Expected response:
+			data = {
+				action: string,
+				result: int,
+				error: string
+			}
+			*/
+			function createNewStatus(data){
+				if (data === undefined){
+					console.error("What the hell, no data");
+					return false;
+				}
+				
+				var targetContainer = document.querySelector("#output-status");
+				
+				var idicators = ["action", "result", "error"];
+				// Find the template inside the dom
+				var template = document.querySelector("#status");
+				
+				//Clone the template
+				var clonedContainer = template.cloneNode(true);
+				
+				// Adjust the data in the cloned
+				clonedContainer.id = "newer-status-" + Math.random();
+				
+				// Inject data from server
+				for (var i = 0; i < idicators.length; i++){
+					var currentKey = idicators[i];
+					clonedContainer.querySelector("." + currentKey).innerText = data[currentKey];
+				}
+				
+				targetContainer.append(clonedContainer);
+				return true;
+			}
+
+		</script>
+		<style>
+			.status-indicators{
+			  color: green;
+			  border: 1px dashed black;
+			  max-width: 100px;
+			  text-align: center;
+			  padding: 10px 50px;
+			}
+
+			img {
+				max-width: 200px;
+				max-height: 200px;
+			}
+			
+			a.weird-links {
+				color: green;
+			}
+			
+			a.weird-links:active{
+				color:red;
+			}
+			
+			a.weird-links:visited{
+				color: pink;
+			}
+
+			
+			a.normal-links {
+				color: gray;
+			}
+			
+			a.normal-links:active{
+				color:orange;
+			}
+			
+			a.normal-links:visited{
+				color: purple;
+			}
+			
+			
+			#my-title{
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="my-title" onclick="modifyMainTitle();">My awesome title for my awesome page</h1>
+		
+		<input type="button" onclick="countElements();" value="Click me to count" />
+		
+		<ul>
+			<li>
+			  <a class="weird-links" href="http://www.google.com">Google</a>
+			</li>
+			<li>
+			  <a class="weird-links" href="http://www.waze.com">waze</a></li>
+			<li>
+			  <a class="weird-links" href="http://www.facebook.com">Facebook</a>
+			</li>
+		</ul>
+	  
+	  <div id="my-images">
+		  <img onclick="modifyMainTitle();" src="1.jpg" />
+		  <img src="2.jpg" />
+		  <img src="3.jpg" />
+	  </div>
+	  
+	  <span id="wanted-text">This is the value we want to compare</span>
+	  
+	  <div id="output-status">
+		  <div id="status" class="status-indicators">
+			<div class="action"></div>
+			<div class="result"></div>
+			<div class="error"></div>
+		  </div>		
+	  </div>
+	</body>
+
+</html>

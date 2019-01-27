@@ -1,0 +1,36 @@
+canvas {
+	border: 1px solid;
+	padding: 5px;
+	margin: 10px;
+}
+
+input#radius {
+	width: 131px;
+	margin: 10px;
+}
+
+div {
+	margin-bottom: 10px;
+}
+
+.validate:invalid + span:after {
+	content:'\2716';
+	padding-left: 5px;
+}
+
+.validate:valid + span:after {
+	content:'\2713';
+    padding-left: 5px;
+}
+
+#status-indicator {
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    bottom: 0px;
+    background-color: red;
+    width: 50%;
+    height: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
